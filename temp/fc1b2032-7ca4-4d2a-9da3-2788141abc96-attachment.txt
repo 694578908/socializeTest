@@ -1,0 +1,3 @@
+INFO     log:log_util.py:49 用例标题:提交验证码,请求地址为:http://higher8pre.douxiangapp.com/dboxAdmin/v1/security/getToken, 请求参数为:{'userName': 'zqj', 'pwd': 123456, 'code': '3113', 'type': 0}
+INFO     log:log_util.py:49 实际结果接口返回信息为:{"code":0,"message":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ6cWoiLCJjcmVhdGVkIjoxNjk1NzIzNjMyMDE2LCJleHAiOjE3MDQwMzgzOTksImp0aSI6MTAxNn0.dVs6IJz3o_wYbf7PIwX32tx-NlUpHGQkabeI0wRGccimJA7tz1RkdXm2nAlCuvJCW5XredxA2tZstFb8lW9-DQ","request":null,"data":null}
+INFO     log:log_util.py:49 预期结果：code 应为: 0
