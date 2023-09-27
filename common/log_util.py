@@ -1,6 +1,8 @@
 import logging
 import os
+from datetime import datetime, timedelta
 import time
+import pytest
 
 # 创建一个全局的日志记录器和处理器
 logger = None
@@ -45,5 +47,18 @@ def init_logging():
 
 def log_info(message):
     init_logging()  # 确保日志记录器和处理器已经初始化
-    # 记录日志信息
-    logger.info(message)
+    logger.info(message)  # 记录日志信息
+
+
+# 计算当前时间-文件创建时间是否大于超时时间
+def clear_logs(expiration_hours):
+    current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    log_path = os.path.join(current_dir, "log")
+    current_time = datetime.now()
+    for filename in os.listdir(log_path):
+        file_path = os.path.join(log_path, filename)
+        if os.path.isfile(file_path):
+            file_mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
+            time_difference = current_time - file_mtime
+            if time_difference > timedelta(hours=expiration_hours):
+                os.remove(file_path)

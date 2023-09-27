@@ -8,3 +8,5 @@ allure-pytest
 pytest-redis
 jsonpath
 PyYAML
+pytest-logger
+pytest-ini

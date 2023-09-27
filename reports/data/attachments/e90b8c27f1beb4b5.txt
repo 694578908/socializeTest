@@ -1,3 +1,0 @@
-INFO     log:log_util.py:49 用例标题:登录账号密码,请求地址为:http://higher8pre.douxiangapp.com/dboxAdmin/v1/security/manageLogin, 请求参数为:{'userName': 'zqj', 'pwd': 123456}
-INFO     log:log_util.py:49 实际结果接口返回信息为:{"code":0,"message":null,"request":null,"data":true}
-INFO     log:log_util.py:49 预期结果：code 应为: 0
