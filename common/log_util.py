@@ -2,7 +2,6 @@ import logging
 import os
 from datetime import datetime, timedelta
 import time
-import pytest
 
 # 创建一个全局的日志记录器和处理器
 logger = None

@@ -1,88 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5e2ad6e-382f-42f9-9d90-747888ee4ee8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="e5e2ad6e-382f-42f9-9d90-747888ee4ee8" name="Default Changelist" comment="conftest添加自定义参数">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/test_get_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_get_request.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/log_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/log_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/redis_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/redis_extract.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/extract.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/extract.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/1c18108966b8281d.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/2264613675f8a62a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/25d2e13577f6bb09.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/2b51777a04f3d2ad.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/2ba27730cbe6d9dd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/3b31b7a2888dad4e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/3c82a84903fe75f6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/5543bb91229f4557.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/567e8d5a76d2f149.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/6b93ad4b0347a2d4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/6c331ad9d7265dee.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/6eec37afaefe2cf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/7893eacf247682e3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/7e058b28e0d84bba.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/8a7f5d2c6e7abad.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/9cdf50623e085e18.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/a4200efbe9aacc25.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/b34479062ebaa4fa.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/b51dd1cc947b8925.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/e54dd2a17378c4a0.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/attachments/e90b8c27f1beb4b5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reports/data/behaviors.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/data/behaviors.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/data/packages.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reports/data/suites.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/data/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/test-cases/1913e167e6f5c305.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/test-cases/8ebea9c171226064.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/test-cases/968c430be2725085.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/data/timeline.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reports/export/influxDbData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reports/export/prometheusData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/history/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/history/history-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/history/retry-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/widgets/behaviors.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/widgets/duration-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/widgets/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/widgets/retry-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/widgets/severity.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/widgets/status-chart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/widgets/suites.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/widgets/summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/059f7096-1b0b-4243-8303-9544a28047f5-attachment.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/0825ad9f-b712-406e-99a1-e6333d926553-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/0a8a036c-a180-4b13-83fe-fc26fe7989f8-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/28c4a965-c18d-4254-ae07-b9c4bc7753c2-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/357883ea-2f60-4a81-9e4c-f71213750572-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/36ca1f57-989b-46f7-846e-9629557913dc-attachment.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/374d1b1a-c3f2-4c13-b6ab-c1e82be198e5-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/3e9f2ad5-0cd7-4ef7-9954-6517d53eb0a9-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/41af4547-63f7-40a8-842b-626ce42f4fbd-attachment.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/509ecd16-c8ce-4607-a2c2-27e75ded8854-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/523f08c5-38da-474e-968d-4c2f6869e61c-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/532970d6-87af-4202-8b52-6b9c577c1bfc-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/55dd2862-eef4-43d0-8205-8f9967ce2ae3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/6ffb3c68-791f-4655-83e8-68a51f33a95f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/74ab4070-9f55-42de-8c43-06280fecd612-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/82c4e4a8-051a-4364-91c2-6f2f19407d11-attachment.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/83fbe9a4-dd18-4e9b-8b4e-0bf5fcac86e6-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/917c98d3-402e-42a3-8cc5-ea190961a8d7-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/9c403f41-fb1a-4a22-a4db-a1227a7c49d2-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/a5561b1b-7594-48ae-aae1-27270022a29d-attachment.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/b2945269-e6db-4b71-9640-a73f9ff17576-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/b7afdfb6-6f0d-463e-a2de-f3119270a0f8-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/c657d2eb-a327-40e3-b40f-afd1c4cb87cf-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/c797e201-a9fe-41e1-b050-cd49dd8d6f59-attachment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/da70e630-ff26-43dd-b2ce-10e155165097-attachment.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/fc1b2032-7ca4-4d2a-9da3-2788141abc96-attachment.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="126" column="62" selection-start-line="91" selection-start-column="3" selection-end-line="126" selection-end-column="62" />
+            <state relative-caret-position="202">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -104,14 +44,43 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/redis_extract.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestCases/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="451">
+              <caret line="38" column="15" lean-forward="true" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/request_util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/case_data.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="473" column="20" selection-start-line="473" selection-start-column="20" selection-end-line="473" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -122,28 +91,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCases/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/case_data.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="473" column="20" selection-start-line="473" selection-start-column="20" selection-end-line="473" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/log_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="53" column="31" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="1147">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -152,31 +103,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/2023-09-25.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/lib/ntpath.py">
+        <entry file="file://$PROJECT_DIR$/common/count.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="112" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="341">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/template.yml">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_hooks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-186" />
+            <state relative-caret-position="176">
+              <caret line="432" selection-start-line="432" selection-end-line="432" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/2023-09-27.log">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3163">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="207">
+              <caret line="349" selection-start-line="349" selection-end-line="349" />
             </state>
           </provider>
         </entry>
@@ -220,9 +168,10 @@
         <option value="$PROJECT_DIR$/TestCases/run.py" />
         <option value="$PROJECT_DIR$/pytest.ini" />
         <option value="$PROJECT_DIR$/log/2023-09-26.log" />
-        <option value="$PROJECT_DIR$/TestCases/conftest.py" />
-        <option value="$PROJECT_DIR$/TestCases/test_get_request.py" />
         <option value="$PROJECT_DIR$/common/log_util.py" />
+        <option value="$PROJECT_DIR$/TestCases/test_get_request.py" />
+        <option value="$PROJECT_DIR$/common/redis_extract.py" />
+        <option value="$PROJECT_DIR$/TestCases/conftest.py" />
       </list>
     </option>
   </component>
@@ -237,7 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,6 +217,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,7 +307,8 @@
       <workItem from="1695726263095" duration="73000" />
       <workItem from="1695779656736" duration="318000" />
       <workItem from="1695780333043" duration="2471000" />
-      <workItem from="1695784360636" duration="24394000" />
+      <workItem from="1695784360636" duration="25333000" />
+      <workItem from="1695864711405" duration="6381000" />
     </task>
     <task id="LOCAL-00001" summary="去掉conftest的注释">
       <created>1695397876875</created>
@@ -451,11 +401,25 @@
       <option name="project" value="LOCAL" />
       <updated>1695784443711</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="添加日志定时清除">
+      <created>1695811027287</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695811027287</updated>
+    </task>
+    <task id="LOCAL-00015" summary="添加日志定时清除">
+      <created>1695811081564</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695811081564</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63794000" />
+    <option name="totallyTimeSpent" value="71114000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -470,13 +434,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29584223" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29904053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.318872" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28850326" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.3286334" />
@@ -531,27 +495,14 @@
     <MESSAGE value="修改allure文件名allure.py标题格式错乱问题&#10;        # current_param_names = [param.name for param in test_result.parameters]&#10;        # # test_result.parameters.extend([&#10;        # #     Parameter(name=name, value=represent(value))&#10;        # #     for name, value in params.items()&#10;        # #     if name not in current_param_names&#10;        # # ])&#10;        &#10;     修改成test_result.parameters.extend([])" />
     <MESSAGE value="修改配置requirements" />
     <MESSAGE value="修改配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改配置" />
+    <MESSAGE value="添加日志定时清除" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加日志定时清除" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1695810773636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1695871187689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/Merchant$run.coverage" NAME="run Coverage Results" MODIFIED="1695723630584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12844">
-          <caret line="371" selection-start-line="371" selection-end-line="371" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20406">
-          <caret line="616" selection-start-line="616" selection-end-line="616" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/lib/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -596,13 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="177" selection-start-line="177" selection-end-line="177" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/count.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -659,27 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/request_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/2023-09-25.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/redis_extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/allure_commons/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -701,16 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/yaml_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1132">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -720,16 +633,6 @@
           <caret line="1372" selection-start-line="1372" selection-end-line="1372" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytest.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/2023-09-25.log">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -745,62 +648,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/2023-09-27.log">
+    <entry file="file://$PROJECT_DIR$/pytest.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3163">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/template.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-186" />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/lib/ntpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="62">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log/2023-09-25.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="126" column="62" selection-start-line="91" selection-start-column="3" selection-end-line="126" selection-end-column="62" />
+        <state relative-caret-position="3348">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/template.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/2023-09-27.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/yaml_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/fixtures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="563" selection-start-line="563" selection-end-line="563" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/python.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1790" selection-start-line="1790" selection-end-line="1790" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_callers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_hooks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="349" selection-start-line="349" selection-end-line="349" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/request_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/case_data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="473" column="20" selection-start-line="473" selection-start-column="20" selection-end-line="473" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extract.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/case_data.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="473" column="20" selection-start-line="473" selection-start-column="20" selection-end-line="473" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/log_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="31" />
+        <state relative-caret-position="1147">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/redis_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TestCases/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="451">
+          <caret line="38" column="15" lean-forward="true" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
