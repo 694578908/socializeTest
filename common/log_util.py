@@ -3,38 +3,39 @@ import os
 from datetime import datetime, timedelta
 import time
 
+
 # 创建一个全局的日志记录器和处理器
 logger = None
 console = None
 
 
-def init_logging():
+def init_logging(log_data):
+    dirname, log_name, log_name_format, log_level, log_format = log_data
     global logger, console
 
     if logger is not None:
         return  # 如果已经初始化，直接返回
 
     root_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    log_path = os.path.join(root_path, "log")
+    log_path = os.path.join(root_path, dirname)
     if not os.path.exists(log_path):
         os.makedirs(log_path)
     # 定义日志位置和文件名
-    logname = os.path.join(log_path, "{}.log".format(time.strftime("%Y-%m-%d")))
+    logname = os.path.join(log_path, log_name.format(time.strftime(log_name_format)))
     # 创建一个日志记录器
     logger = logging.getLogger('log')
     # 设置日志打印的级别
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(log_level)
     # 创建日志输入的格式
-    formater = logging.Formatter(
-        '[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s')
+    formater = logging.Formatter(log_format)
     # 创建日志处理器，用来存放日志文件
     filelogger = logging.FileHandler(logname, mode='a', encoding="UTF-8")
     # 创建日志处理器，在控制台打印
     console = logging.StreamHandler()
     # 设置控制台打印日志界别
-    console.setLevel(logging.DEBUG)
+    console.setLevel(log_level)
     # 文件存放日志级别
-    filelogger.setLevel(logging.DEBUG)
+    filelogger.setLevel(log_level)
     # 文件存放日志格式
     filelogger.setFormatter(formater)
     # 控制台打印日志格式
@@ -45,7 +46,6 @@ def init_logging():
 
 
 def log_info(message):
-    init_logging()  # 确保日志记录器和处理器已经初始化
     logger.info(message)  # 记录日志信息
 
 

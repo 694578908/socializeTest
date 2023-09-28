@@ -53,8 +53,8 @@ class TestRequest:
     # 提交验证码
     @allure.feature('登录功能模块')
     @allure.title('提交验证码')
-    def test_case_gettoken(self):
-        data = variable_code()
+    def test_case_gettoken(self, redis_data):
+        data = variable_code(redis_data)
         value = data[0]['code_token']
         for case in value:
             count(case)  # 打印用例执行次数

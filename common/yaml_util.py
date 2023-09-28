@@ -33,7 +33,6 @@ class YamlUtil:
     def func_yaml(self, data, variable_whitelist=None):
         if variable_whitelist is None:
             variable_whitelist = set()  # 默认情况下，白名单为空
-
         if isinstance(data, dict):
             for key, value in data.items():
                 if isinstance(value, str) and '${' in value and '}' in value:

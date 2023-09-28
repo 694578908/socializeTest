@@ -1,15 +1,19 @@
+from common import log_util
 from common.yaml_util import YamlUtil
 
 
-def variable_code():
-    # ´Ó extract.yml ÖĞ¶ÁÈ¡ admin_user_15881086121 µÄÖµ
-    code_value = YamlUtil().read_extract_yaml('admin_user_15881086121')
-    # ¶ÁÈ¡²âÊÔÓÃÀıÊı¾İ
+def variable_code(redis_data):
+    key = redis_data[4]
+    # ä» extract.yml ä¸­è¯»å– admin_user_15881086121 çš„å€¼
+    code_value = YamlUtil().read_extract_yaml('admin_user_' + key)
+    # è¯»å–æµ‹è¯•ç”¨ä¾‹æ•°æ®
     if code_value is None:
-        # Èç¹ûÌáÈ¡Êı¾İÎªNone£¬¿ÉÒÔÅ×³öÒì³£»òÕß·µ»ØÒ»¸öÄ¬ÈÏÖµ
-        raise ValueError("admin_user_15881086121 is None")
+        # å¦‚æœæå–æ•°æ®ä¸ºNoneï¼Œå¯ä»¥æŠ›å‡ºå¼‚å¸¸æˆ–è€…è¿”å›ä¸€ä¸ªé»˜è®¤å€¼
+        error_message = "\033[1m\033[31m" + f"{'admin_user_' + key}æœªè·å–åˆ°éªŒè¯ç ï¼Œè¯·æ£€æŸ¥conftest.pyæ‰‹æœºå·æ˜¯å¦æ­£ç¡®" + "\033[0m"
+        log_util.log_info(error_message)
+        raise ValueError(error_message)
     data = YamlUtil().read_testcase_yaml('case_data.yml')
-    # ½« admin_user_15881086121 µÄÖµÌæ»»µ½²âÊÔÓÃÀıÊı¾İÖĞ
+    # å°† admin_user_15881086121 çš„å€¼æ›¿æ¢åˆ°æµ‹è¯•ç”¨ä¾‹æ•°æ®ä¸­
     data['code_token'][0]['requests']['data']['code'] = code_value
     value = YamlUtil().func_yaml(data)
     print(f"Result: {value}")
@@ -17,24 +21,22 @@ def variable_code():
 
 
 def variable_token():
-    # ´Ó extract.yml ÖĞ¶ÁÈ¡ token µÄÖµ
+    # ä» extract.yml ä¸­è¯»å– token çš„å€¼
     token_value = YamlUtil().read_extract_yaml('token')
-    # ¶ÁÈ¡²âÊÔÓÃÀıÊı¾İ
+    # è¯»å–æµ‹è¯•ç”¨ä¾‹æ•°æ®
     test_data = YamlUtil().read_testcase_yaml('case_data.yml')
-    # ¼ì²éÊÇ·ñ³É¹¦¶ÁÈ¡µ½ token Öµ
+    # æ£€æŸ¥æ˜¯å¦æˆåŠŸè¯»å–åˆ° token å€¼
     if token_value is None:
-        raise ValueError("Token is None")
-    # ±éÀú nft ²¿·ÖµÄ²âÊÔÓÃÀıÊı¾İ
+        raise ValueError("\033[1m\033[31m" + "tokenä¸ºç©º" + "\033[0m")
+    # éå† nft éƒ¨åˆ†çš„æµ‹è¯•ç”¨ä¾‹æ•°æ®
     for case in test_data['nft']:
-        # ¼ì²éÇëÇóÍ·ÖĞÊÇ·ñÓĞ 'Authorization' ×Ö¶Î
+        # æ£€æŸ¥è¯·æ±‚å¤´ä¸­æ˜¯å¦æœ‰ 'Authorization' å­—æ®µ
         if 'requests' in case and 'headers' in case['requests']:
             headers = case['requests']['headers']
             if 'Authorization' in headers:
-                # ½« token ÖµÌæ»»µ½ 'Authorization' ×Ö¶ÎÖĞ
+                # å°† token å€¼æ›¿æ¢åˆ° 'Authorization' å­—æ®µä¸­
                 headers['Authorization'] = token_value
-    # Ê¹ÓÃ func_yaml ·½·¨´¦ÀíÌæ»»
+    # ä½¿ç”¨ func_yaml æ–¹æ³•å¤„ç†æ›¿æ¢
     replaced_data = YamlUtil().func_yaml(test_data)
 
     return [replaced_data]
-
-
