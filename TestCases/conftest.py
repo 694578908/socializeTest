@@ -24,17 +24,15 @@ def log_data():
     log_name_format = "%Y-%m-%d"  # 文件名以时间格式显示
     log_level = logging.DEBUG  # 日志等级
     log_format = '[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s'  # 日志格式
-    data = (dirname, log_name, log_name_format, log_level, log_format)
-    disable_logging = 1
-    logger = get_logger()
+    disable_logging = 1  # 1开启日志，2关闭日志
 
+    data = (dirname, log_name, log_name_format, log_level, log_format)
+    logger = get_logger()
     if disable_logging == 1:
         init_logging(data)  # 确保日志记录器和处理器已经初始化
     elif disable_logging == 2 and logger is not None:
         logger.disabled = True  # 禁用日志记录器
-
     return data
-
 
 # 清除extract.yml
 @pytest.fixture(scope="session", autouse=True)
