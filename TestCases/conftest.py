@@ -1,44 +1,52 @@
 import pytest
 import logging
-from common.log_util import clear_logs, init_logging
+from common.log_util import clear_logs, init_logging, get_logger
 from common.yaml_util import YamlUtil
 
 
-# redis²ÎÊıÅäÖÃÏî
+# rediså‚æ•°é…ç½®é¡¹
 @pytest.fixture(scope='session')
 def redis_data():
     host = '172.16.1.5'
     password = 'Lzd%2c6c1181ebC6cc'
     port = 6379
     db = 7
-    key = '158810861211'  # ĞèÒª×Ô¶¨ÒåĞŞ¸ÄÏëÒª»ñÈ¡ÊÖ»úÑéÖ¤Âë
+    key = '158810861211'  # éœ€è¦è‡ªå®šä¹‰ä¿®æ”¹æƒ³è¦è·å–æ‰‹æœºéªŒè¯ç 
     data = (host, password, port, db, key)
     return data
 
-# logÈÕÖ¾²ÎÊıÅäÖÃÏî
+
+# logæ—¥å¿—å‚æ•°é…ç½®é¡¹
 @pytest.fixture(scope='session', autouse=True)
 def log_data():
-    dirname = 'log'  # ÎÄ¼ş¼ĞÃû³Æ
-    log_name = '{}.log'  # ÎÄ¼şÃû£¬Ä¬ÈÏÎª¿Õ
-    log_name_format = "%Y-%m-%d"  # ÎÄ¼şÃûÒÔÊ±¼ä¸ñÊ½ÏÔÊ¾
-    log_level = logging.DEBUG  # ÈÕÖ¾µÈ¼¶
-    log_format = '[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s'  # ÈÕÖ¾¸ñÊ½
+    dirname = 'log'  # æ–‡ä»¶å¤¹åç§°
+    log_name = '{}.log'  # æ–‡ä»¶åï¼Œé»˜è®¤ä¸ºç©º
+    log_name_format = "%Y-%m-%d"  # æ–‡ä»¶åä»¥æ—¶é—´æ ¼å¼æ˜¾ç¤º
+    log_level = logging.DEBUG  # æ—¥å¿—ç­‰çº§
+    log_format = '[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s'  # æ—¥å¿—æ ¼å¼
     data = (dirname, log_name, log_name_format, log_level, log_format)
-    init_logging(data)  # È·±£ÈÕÖ¾¼ÇÂ¼Æ÷ºÍ´¦ÀíÆ÷ÒÑ¾­³õÊ¼»¯
+    disable_logging = 1
+    logger = get_logger()
+
+    if disable_logging == 1:
+        init_logging(data)  # ç¡®ä¿æ—¥å¿—è®°å½•å™¨å’Œå¤„ç†å™¨å·²ç»åˆå§‹åŒ–
+    elif disable_logging == 2 and logger is not None:
+        logger.disabled = True  # ç¦ç”¨æ—¥å¿—è®°å½•å™¨
+
     return data
 
 
-# Çå³ıextract.yml
+# æ¸…é™¤extract.yml
 @pytest.fixture(scope="session", autouse=True)
 def clear_extract_yaml():
     YamlUtil().clear_extract_yaml()
     yield
 
 
-# ¶¨Ê±Çå³ılogÈÕÖ¾
+# å®šæ—¶æ¸…é™¤logæ—¥å¿—
 @pytest.fixture(scope="session", autouse=True)
 def clear_log():
-    # ÉèÖÃ¹ıÆÚÊ±¼ä£¨ÒÔĞ¡Ê±Îªµ¥Î»£©
+    # è®¾ç½®è¿‡æœŸæ—¶é—´ï¼ˆä»¥å°æ—¶ä¸ºå•ä½ï¼‰
     expiration_hours = 48
     clear_logs(expiration_hours)
     yield

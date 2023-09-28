@@ -3,7 +3,6 @@ import os
 from datetime import datetime, timedelta
 import time
 
-
 # 创建一个全局的日志记录器和处理器
 logger = None
 console = None
@@ -46,7 +45,12 @@ def init_logging(log_data):
 
 
 def log_info(message):
-    logger.info(message)  # 记录日志信息
+    if logger is not None:
+        logger.info(message)  # 记录日志信息
+
+
+def get_logger():
+    return None
 
 
 # 计算当前时间-文件创建时间是否大于超时时间
