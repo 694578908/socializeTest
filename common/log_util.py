@@ -49,8 +49,13 @@ def log_info(message):
         logger.info(message)  # 记录日志信息
 
 
-def get_logger():
-    return None
+# 定义日志开启关闭
+def disable_log(disable_logging, data):
+    if disable_logging:
+        init_logging(data)  # 确保日志记录器和处理器已经初始化
+    else:
+        if logger is not None:
+            logger.disabled = True  # 禁用日志记录器
 
 
 # 计算当前时间-文件创建时间是否大于超时时间

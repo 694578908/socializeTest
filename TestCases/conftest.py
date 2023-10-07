@@ -1,6 +1,6 @@
 import pytest
 import logging
-from common.log_util import clear_logs, init_logging, get_logger
+from common.log_util import clear_logs, disable_log
 from common.yaml_util import YamlUtil
 
 
@@ -24,15 +24,12 @@ def log_data():
     log_name_format = "%Y-%m-%d"  # 文件名以时间格式显示
     log_level = logging.DEBUG  # 日志等级
     log_format = '[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s'  # 日志格式
-    disable_logging = 1  # 1开启日志，2关闭日志
+    disable_logging = True  # True开启日志，False关闭日志
 
     data = (dirname, log_name, log_name_format, log_level, log_format)
-    logger = get_logger()
-    if disable_logging == 1:
-        init_logging(data)  # 确保日志记录器和处理器已经初始化
-    elif disable_logging == 2 and logger is not None:
-        logger.disabled = True  # 禁用日志记录器
+    disable_log(disable_logging, data)
     return data
+
 
 # 清除extract.yml
 @pytest.fixture(scope="session", autouse=True)
