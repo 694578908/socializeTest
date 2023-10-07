@@ -11,7 +11,7 @@ def redis_data():
     password = 'Lzd%2c6c1181ebC6cc'
     port = 6379
     db = 7
-    key = '158810861211'  # 需要自定义修改想要获取手机验证码
+    key = '15881086121'  # 需要自定义修改想要获取手机验证码
     data = (host, password, port, db, key)
     return data
 
