@@ -12,7 +12,7 @@ def read_redis(redis_data):
     number = ('admin_user_' + key)
     value = redis_client.get(number)
     if value is None:
-        error_message = "\033[1m\033[31m" + f"{number}未获取到验证码，请检查conftest.py手机号是否正确" + "\033[0m"
+        error_message = "\033[1m\033[31m" + f"{number}未获取到验证码，请检查conftest.py手机号或case_data.yml账号密码是否正确" + "\033[0m"
         log_util.log_info(error_message)
         raise ValueError(error_message)
 

@@ -19,7 +19,7 @@ code_token:
     data:
       userName: zqj
       pwd: 123456
-      code: ${admin_user_15881086121}
+      code: ${admin_user_key}
       type: 0
   validate:
     - equals: {code: 0}

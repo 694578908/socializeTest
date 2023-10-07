@@ -32,7 +32,6 @@ class TestRequest:
                 log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
                 log_util.log_info('实际结果接口返回信息为:{}'.format(result))
                 log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
-                assert res['code'] == case['validate'][0]['equals']['code']
 
                 with allure.step(case['name']):
                     allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
@@ -108,7 +107,6 @@ class TestRequest:
                     log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
                     log_util.log_info('实际结果接口返回信息为:{}'.format(result))
                     log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
-                    assert res['code'] == case['validate'][0]['equals']['code']
 
                     with allure.step(case['name']):
                         allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",

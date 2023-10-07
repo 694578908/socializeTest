@@ -10,7 +10,7 @@ def variable_code(redis_data):
     # 读取测试用例数据
     if code_value is None:
         # 如果提取数据为None，可以抛出异常或者返回一个默认值
-        error_message = "\033[1m\033[31m" + f"{'admin_user_' + key}未获取到验证码，请检查conftest.py手机号是否正确" + "\033[0m"
+        error_message = "\033[1m\033[31m" + f"{'admin_user_' + key}未获取到验证码，请检查conftest.py手机号或case_data.yml账号密码是否正确" + "\033[0m"
         log_util.log_info(error_message)
         raise ValueError(error_message)
     # 读取case_data.yml
@@ -25,7 +25,7 @@ def variable_code(redis_data):
 # case_data文件的${}变量替换成extract文件Authorization的值
 def variable_token():
     # 从 extract.yml 中读取 token 的值
-    token_value = YamlUtil().read_extract_yaml('token')
+    token_value = YamlUtil().read_extract_yaml('token').encode('utf-8')
     # 读取测试用例数据
     test_data = YamlUtil().read_testcase_yaml('case_data.yml')
     # 检查是否成功读取到 token 值
