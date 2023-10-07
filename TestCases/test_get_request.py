@@ -35,9 +35,9 @@ class TestRequest:
                 assert res['code'] == case['validate'][0]['equals']['code']
 
                 with allure.step(case['name']):
-                    allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="请求参数",
+                    allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
                                   attachment_type=allure.attachment_type.JSON)
-                    allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="接口响应",
+                    allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
                                   attachment_type=allure.attachment_type.JSON)
                     try:
                         assert res['code'] == case['validate'][0]['equals']['code']
@@ -74,9 +74,9 @@ class TestRequest:
                     log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
                     with allure.step(case['name']):
-                        allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="请求参数",
+                        allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
                                       attachment_type=allure.attachment_type.JSON)
-                        allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="接口响应",
+                        allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
                                       attachment_type=allure.attachment_type.JSON)
                         try:
                             assert res['code'] == case['validate'][0]['equals']['code']
@@ -111,9 +111,9 @@ class TestRequest:
                     assert res['code'] == case['validate'][0]['equals']['code']
 
                     with allure.step(case['name']):
-                        allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="请求参数",
+                        allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
                                       attachment_type=allure.attachment_type.JSON)
-                        allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="接口响应",
+                        allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
                                       attachment_type=allure.attachment_type.JSON)
                         try:
                             assert res['code'] == case['validate'][0]['equals']['code']

@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Sat Oct 07 12:15:56 CST 2023","Sat Oct 07 12:15:56 CST 2023","1","TestCases","test_get_request","TestRequest","","","提交验证码",""
-"broken","Sat Oct 07 12:15:55 CST 2023","Sat Oct 07 12:15:56 CST 2023","1088","TestCases","test_get_request","TestRequest","","","登录账号密码",""
-"broken","Sat Oct 07 12:15:56 CST 2023","Sat Oct 07 12:15:56 CST 2023","36","TestCases","test_get_request","TestRequest","","","接口参数效验",""
+"passed","Sat Oct 07 14:01:06 CST 2023","Sat Oct 07 14:01:07 CST 2023","1118","TestCases","test_get_request","TestRequest","","","登录账号密码",""
+"passed","Sat Oct 07 14:01:08 CST 2023","Sat Oct 07 14:01:19 CST 2023","10805","TestCases","test_get_request","TestRequest","","","接口参数效验",""
+"passed","Sat Oct 07 14:01:07 CST 2023","Sat Oct 07 14:01:08 CST 2023","856","TestCases","test_get_request","TestRequest","","","提交验证码",""
