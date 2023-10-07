@@ -31,7 +31,7 @@ def log_data():
     return data
 
 
-# 清除extract.yml
+# 实时清除extract.yml
 @pytest.fixture(scope="session", autouse=True)
 def clear_extract_yaml():
     YamlUtil().clear_extract_yaml()

@@ -21,6 +21,7 @@ def variable_code(redis_data):
     print(f"Result: {value}")
     return [value]
 
+
 # case_data文件的${}变量替换成extract文件Authorization的值
 def variable_token():
     # 从 extract.yml 中读取 token 的值
