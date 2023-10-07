@@ -70,7 +70,7 @@ class TestRequest:
                     log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
                     log_util.log_info('实际结果接口返回信息为:{}'.format(result))
                     message = json.loads(result)['message']
-                    YamlUtil().write_extract_yaml({'token': message})
+                    YamlUtil().write_extract_yaml({'token': message})  # 写入token到extract.yml
                     log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
                     with allure.step(case['name']):
@@ -125,5 +125,3 @@ class TestRequest:
                     print("在yml文件requests目录下必须要有method,url,data,headers")
             else:
                 print("yml一级关键字必须包含:name,requests,validate")
-
-
