@@ -21,7 +21,7 @@ def redis_data():
 def log_data():
     dirname = 'log'  # 文件夹名称
     log_name = '{}.log'  # 文件名，默认为空
-    log_name_format = "%Y-%m-%d"  # 文件名以时间格式显示
+    log_name_format = "%Y-%m-%d"  # 默认文件名以年-月-日格式显示
     log_level = logging.DEBUG  # 日志等级
     log_format = '[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s'  # 日志格式
     disable_logging = True  # True开启日志，False关闭日志

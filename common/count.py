@@ -3,6 +3,7 @@ from config.color import print_centered_ansi
 counter = 0
 
 
+# 定义计数器
 def count(data):
     global counter
     separator = '>' * 20

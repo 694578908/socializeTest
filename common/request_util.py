@@ -3,9 +3,9 @@ import json
 
 
 class RequestUtil:
-
     session = requests.session()
 
+    # 定义接口请求方式
     def send_requests(self, method, url, headers, data, **kwargs):
         method = str(method).lower()
         rep = None
@@ -17,5 +17,3 @@ class RequestUtil:
             rep = RequestUtil.session.request(method=method, data=data, url=url, headers=headers, **kwargs)
 
         return rep.text
-
-

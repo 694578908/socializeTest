@@ -58,7 +58,7 @@ def disable_log(disable_logging, data):
             logger.disabled = True  # 禁用日志记录器
 
 
-# 计算当前时间-文件创建时间是否大于超时时间
+# 定义计算当前时间-文件创建时间是否大于超时时间
 def clear_logs(expiration_hours):
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     log_path = os.path.join(current_dir, "log")
