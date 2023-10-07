@@ -2,7 +2,7 @@ from common import log_util
 from common.yaml_util import YamlUtil
 
 
-# extract的token替换case_data文件的${}变量
+# case_data文件的${}变量替换成extract文件admin_user_的值
 def variable_code(redis_data):
     key = redis_data[4]
     # 从 extract.yml 中读取 admin_user_key 的值
@@ -21,7 +21,7 @@ def variable_code(redis_data):
     print(f"Result: {value}")
     return [value]
 
-
+# case_data文件的${}变量替换成extract文件Authorization的值
 def variable_token():
     # 从 extract.yml 中读取 token 的值
     token_value = YamlUtil().read_extract_yaml('token')
