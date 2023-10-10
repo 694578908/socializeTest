@@ -25,10 +25,24 @@ class YamlUtil:
             f.truncate()
 
     # 读取yml文件
-    def read_testcase_yaml(self, yaml_name):
+    def read_testcase_yaml(self, yaml_name, key_name=None):
         with open(os.getcwd() + "/data/" + yaml_name, mode='r', encoding='utf-8')as f:
-            value = yaml.load(stream=f, Loader=yaml.FullLoader)
+            value = yaml.safe_load(stream=f)
+            if key_name:
+                data=value[key_name]
+                print(data)
+                return value[key_name]
+
             return value
+
+
+    def extra_read_yaml(self,yaml_name, key_name):
+
+        data=self.read_testcase_yaml(yaml_name, key_name)
+        req_info=data["req_info"]
+
+
+
 
     def func_yaml(self, data, variable_whitelist=None):
         if variable_whitelist is None:

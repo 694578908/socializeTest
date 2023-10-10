@@ -2,18 +2,18 @@ import shutil
 
 
 def print_centered_ansi(text, color_code):
-    # »ñÈ¡ÖÕ¶ËµÄ¿í¶È
+    # è·å–ç»ˆç«¯çš„å®½åº¦
     terminal_width = shutil.get_terminal_size().columns
-    # ¼ÆËãÒª´òÓ¡µÄÎÄ±¾³¤¶È
+    # è®¡ç®—è¦æ‰“å°çš„æ–‡æœ¬é•¿åº¦
     text_length = len(text)
-    # ¼ÆËã×ó±ßÌî³äµÄ¿Õ¸ñÊı
+    # è®¡ç®—å·¦è¾¹å¡«å……çš„ç©ºæ ¼æ•°
     left_padding = (terminal_width - text_length) // 2
-    # ¼ÆËãÓÒ±ßÌî³äµÄ¿Õ¸ñÊı
+    # è®¡ç®—å³è¾¹å¡«å……çš„ç©ºæ ¼æ•°
     right_padding = terminal_width - text_length - left_padding
-    # Éú³É×ó±ßºÍÓÒ±ßµÄÌî³ä×Ö·û´®
+    # ç”Ÿæˆå·¦è¾¹å’Œå³è¾¹çš„å¡«å……å­—ç¬¦ä¸²
     left_fill = " " * left_padding
     right_fill = " " * right_padding
-    # Éú³É×îÖÕµÄ¾ÓÖĞÎÄ±¾
+    # ç”Ÿæˆæœ€ç»ˆçš„å±…ä¸­æ–‡æœ¬
     centered_text = f"\033[{color_code}m{left_fill}{text}{right_fill}\033[0m"
-    # ´òÓ¡¾ÓÖĞÎÄ±¾
+    # æ‰“å°å±…ä¸­æ–‡æœ¬
     print(centered_text)

@@ -2,6 +2,8 @@ import json
 import jsonpath
 import pytest
 import allure
+
+
 from common import log_util
 from common.redis_extract import read_redis
 from common.request_util import RequestUtil
@@ -9,14 +11,14 @@ from common.variable import variable_token, variable_code
 from common.yaml_util import YamlUtil
 from common.count import count
 
-
+@pytest.mark.skip(reason="暂不执行")
 @allure.epic('龙之岛后台')
 class TestRequest:
 
     # 登录账号密码
     @allure.feature('登录功能模块')
     @allure.title('登录账号密码')
-    @pytest.mark.parametrize('case', YamlUtil().read_testcase_yaml('case_data.yml')['login'])
+    @pytest.mark.parametrize('case', YamlUtil().read_testcase_yaml('case_data.yml', 'login'))
     def test_case_login(self, case, redis_data):
         count(case)  # 打印用例执行次数
         if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():

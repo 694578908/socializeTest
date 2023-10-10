@@ -1,5 +1,11 @@
 import pytest
 import logging
+# import os
+# import sys
+# sys.path.append(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
+
+
+from common.ReadFile import read_file
 from common.log_util import clear_logs, disable_log
 from common.yaml_util import YamlUtil
 
@@ -7,11 +13,11 @@ from common.yaml_util import YamlUtil
 # redis参数配置项
 @pytest.fixture(scope='session')
 def redis_data():
-    host = '172.16.1.5'
-    password = 'Lzd%2c6c1181ebC6cc'
-    port = 6379
-    db = 7
-    key = '15881086121'  # 需要自定义修改想要获取手机验证码
+    host = read_file.read_ini()['redis']['host']
+    password = read_file.read_ini()['redis']['password']
+    port = read_file.read_ini()['redis']['port']
+    db = read_file.read_ini()['redis']['db']
+    key = read_file.read_ini()['redis']['key']  # 需要自定义修改想要获取手机验证码
     data = (host, password, port, db, key)
     return data
 
@@ -36,6 +42,16 @@ def log_data():
 def clear_extract_yaml():
     YamlUtil().clear_extract_yaml()
     yield
+
+
+# 定时清除log日志
+@pytest.fixture(scope="session", autouse=True)
+def clear_log():
+    # 设置过期时间（以小时为单位）
+    expiration_hours = 48
+    clear_logs(expiration_hours)
+    yield
+
 
 
 # 定时清除log日志

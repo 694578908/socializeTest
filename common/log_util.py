@@ -63,10 +63,13 @@ def clear_logs(expiration_hours):
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     log_path = os.path.join(current_dir, "log")
     current_time = datetime.now()
-    for filename in os.listdir(log_path):
-        file_path = os.path.join(log_path, filename)
-        if os.path.isfile(file_path):
-            file_mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
-            time_difference = current_time - file_mtime
-            if time_difference > timedelta(hours=expiration_hours):
-                os.remove(file_path)
+    if os.path.exists(log_path):
+        for filename in os.listdir(log_path):
+            file_path = os.path.join(log_path,filename)
+            if os.path.isfile(file_path):
+                file_mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
+                time_difference = current_time - file_mtime
+                if time_difference > timedelta(hours=expiration_hours):
+                    os.remove(file_path)
+    else:
+        pass
