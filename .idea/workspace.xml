@@ -2,59 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e2ad6e-382f-42f9-9d90-747888ee4ee8" name="Default Changelist" comment="common新增ReadFile、AssertUtil，新增文件core">
-      <change beforePath="$PROJECT_DIR$/.idea/Longdao_Backstage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Longdao_Backstage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/test_get_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_get_request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/log_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/log_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/request_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/request_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/yaml_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/yaml_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/color.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/color.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/extract.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/extract.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/behaviors.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/behaviors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/categories.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/packages.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/suites.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/suites.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/data/timeline.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/export/influxDbData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/export/mail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/export/prometheusData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/history/categories-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/history/duration-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/history/history-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/history/history.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/history/retry-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/plugin/behaviors/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/plugin/packages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/plugin/screen-diff/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/plugin/screen-diff/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/behaviors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/categories-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/duration-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/duration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/environment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/executors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/history-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/retry-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/severity.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/status-chart.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/suites.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/widgets/summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/venv/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,16 +115,6 @@
             <path>
               <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
               <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
               <item name="TestCases" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -205,6 +146,18 @@
       <recent name="D:\cases\Merchant\socializeTest\common" />
       <recent name="D:\cases\Merchant\socializeTest\TestCases\reports" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python.run">
     <configuration name="RestClient" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -306,7 +259,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_user.TestUser.test_user_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
@@ -323,7 +275,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/TestCases/test_get_request.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
@@ -340,7 +291,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/TestCases/test_user.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
@@ -393,6 +343,8 @@
       <workItem from="1696901523397" duration="7876000" />
       <workItem from="1696909452800" duration="1466000" />
       <workItem from="1696911989347" duration="8101000" />
+      <workItem from="1701931942353" duration="19000" />
+      <workItem from="1701931976702" duration="252000" />
     </task>
     <task id="LOCAL-00001" summary="去掉conftest的注释">
       <created>1695397876875</created>
@@ -601,7 +553,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110434000" />
+    <option name="totallyTimeSpent" value="110705000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -613,10 +565,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -663,7 +614,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="去掉conftest的注释" />
@@ -703,76 +654,29 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Longdao_Backstage$RestClient.coverage" NAME="RestClient Coverage Results" MODIFIED="1696830895563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
-    <SUITE FILE_PATH="coverage/Longdao_Backstage$ReadFile.coverage" NAME="ReadFile Coverage Results" MODIFIED="1696734898861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_in_test_user_py.coverage" NAME="pytest in test_user.py Coverage Results" MODIFIED="1696914395613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
-    <SUITE FILE_PATH="coverage/Longdao_Backstage$test_get_request.coverage" NAME="test_get_request Coverage Results" MODIFIED="1696737549201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
+    <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_for_test_user_TestUser_test_user_login.coverage" NAME="pytest for test_user.TestUser.test_user_login Coverage Results" MODIFIED="1696911993647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
+    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1696926842779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/Longdao_Backstage$RestClient.coverage" NAME="RestClient Coverage Results" MODIFIED="1696830895563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$test_user.coverage" NAME="test_user Coverage Results" MODIFIED="1696902678216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Merchant$run.coverage" NAME="run Coverage Results" MODIFIED="1695723630584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_in_test_get_request_py.coverage" NAME="pytest in test_get_request.py Coverage Results" MODIFIED="1696821230378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1696737501591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
-    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1696926842779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_for_test_user_TestUser_test_user_login.coverage" NAME="pytest for test_user.TestUser.test_user_login Coverage Results" MODIFIED="1696911993647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
+    <SUITE FILE_PATH="coverage/Longdao_Backstage$test_get_request.coverage" NAME="test_get_request Coverage Results" MODIFIED="1696737549201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
+    <SUITE FILE_PATH="coverage/Longdao_Backstage$ReadFile.coverage" NAME="ReadFile Coverage Results" MODIFIED="1696734898861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/reports/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reports/data/behaviors.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reports/data/categories.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reports/data/behaviors.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/assertion/rewrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/styles.css" />
+    <entry file="file://$PROJECT_DIR$/reports/data/behaviors.json" />
+    <entry file="file://$PROJECT_DIR$/reports/data/categories.csv" />
+    <entry file="file://$PROJECT_DIR$/reports/data/behaviors.csv" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/assertion/rewrite.py" />
     <entry file="file://$PROJECT_DIR$/TestCases/test_login.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/allure_commons/_allure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4929">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/allure_pytest/listener.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2945">
-          <caret line="120" column="40" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pytest/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2914">
-          <caret line="170" selection-start-line="170" selection-end-line="170" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/allure_commons/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="271" selection-start-line="271" selection-end-line="271" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/allure_commons/_allure.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/allure_pytest/listener.py" />
+    <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pytest/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/allure_commons/utils.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -780,20 +684,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/config/findpaths.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/config/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="1372" selection-start-line="1372" selection-end-line="1372" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/config/findpaths.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/config/__init__.py" />
     <entry file="file://$PROJECT_DIR$/log/2023-09-25.log" />
     <entry file="file://$APPLICATION_HOME_DIR$/lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -803,55 +695,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log/2023-09-27.log" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/fixtures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="563" selection-start-line="563" selection-end-line="563" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1790" selection-start-line="1790" selection-end-line="1790" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_callers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="154" selection-start-line="154" selection-end-line="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_hooks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="432" selection-start-line="432" selection-end-line="432" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="349" selection-start-line="349" selection-end-line="349" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/fixtures.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/python.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/runner.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_callers.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_manager.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_hooks.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/main.py" />
     <entry file="file://$PROJECT_DIR$/log/2023-09-28.log" />
     <entry file="file://$PROJECT_DIR$/common/count.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -868,9 +718,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/__init__.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/lib/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -884,9 +732,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reports/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/favicon.ico" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -908,30 +754,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reports/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/sessions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="588" selection-start-line="588" selection-end-line="588" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/urllib3/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="307" selection-start-line="307" selection-end-line="307" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/template.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/app.js" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/sessions.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/urllib3/connection.py" />
+    <entry file="file://$PROJECT_DIR$/data/template.yml" />
     <entry file="file://$PROJECT_DIR$/common/yaml_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1333">
@@ -999,13 +825,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/2023-10-07.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1240">
-          <caret line="40" column="64" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/2023-10-07.log" />
     <entry file="file://$PROJECT_DIR$/data/case_data.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -1013,13 +833,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reports/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/index.html" />
     <entry file="file://$PROJECT_DIR$/data/extract.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
