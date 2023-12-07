@@ -5,7 +5,7 @@ import logging
 # sys.path.append(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 
 
-from common.ReadFile import read_file
+from common.ReadFile import read_ini
 from common.log_util import clear_logs, disable_log
 from common.yaml_util import YamlUtil
 
@@ -13,11 +13,11 @@ from common.yaml_util import YamlUtil
 # redis参数配置项
 @pytest.fixture(scope='session')
 def redis_data():
-    host = read_file.read_ini()['redis']['host']
-    password = read_file.read_ini()['redis']['password']
-    port = read_file.read_ini()['redis']['port']
-    db = read_file.read_ini()['redis']['db']
-    key = read_file.read_ini()['redis']['key']  # 需要自定义修改想要获取手机验证码
+    host = read_ini()['redis']['host']
+    password = read_ini()['redis']['password']
+    port = read_ini()['redis']['port']
+    db = read_ini()['redis']['db']
+    key = read_ini()['redis']['key']  # 需要自定义修改想要获取手机验证码
     data = (host, password, port, db, key)
     return data
 
@@ -51,7 +51,6 @@ def clear_log():
     expiration_hours = 48
     clear_logs(expiration_hours)
     yield
-
 
 
 # 定时清除log日志

@@ -9,7 +9,7 @@ def read_redis(redis_data):
     redis_client = redis.StrictRedis(host=host, port=port, password=password, db=db, decode_responses=True)
     print(redis_client)
     # 提取键对应的值
-    number = ('admin_user_' + key)
+    number = ('get_mobile_code_key' + key)
     value = redis_client.get(number)
     if value is None:
         error_message = "\033[1m\033[31m" + f"{number}未获取到验证码，请检查conftest.py手机号或case_data.yml账号密码是否正确" + "\033[0m"

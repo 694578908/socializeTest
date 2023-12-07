@@ -1,19 +1,17 @@
 login:
 - name: 登录账号密码
   requests:
-    method: post
+    method: get
     headers: {'Content-Type':'application/json'}
-    url: http://higher8pre.douxiangapp.com/dboxAdmin/v1/security/manageLogin
+    url: https://member.dadaplayer.com/api/socialize/login/getCode?type=1&mobile=15881086122
     data:
-      userName: zqj
-      pwd: 123456
   validate:
     - equals: {code: 0}
 
 code_token:
 - name: 提交验证码
   requests:
-    method: post
+    method: get
     url: http://higher8pre.douxiangapp.com/dboxAdmin/v1/security/getToken
     headers: {'Content-Type':'application/json'}
     data:

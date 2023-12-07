@@ -6,7 +6,7 @@ from common.yaml_util import YamlUtil
 def variable_code(redis_data):
     key = redis_data[4]
     # 从 extract.yml 中读取 admin_user_key 的值
-    code_value = YamlUtil().read_extract_yaml('admin_user_' + key)
+    code_value = YamlUtil().read_extract_yaml('get_mobile_code_key' + key)
     # 读取测试用例数据
     if code_value is None:
         # 如果提取数据为None，可以抛出异常或者返回一个默认值
