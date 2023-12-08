@@ -23,21 +23,14 @@ def variable_code(redis_data):
 # case_data文件的${}变量替换成extract文件Authorization的值
 def variable_token():
     # 从 extract.yml 中读取 token 的值
-    token_value = YamlUtil().read_extract_yaml('token').encode('utf-8')
+    token_value = YamlUtil().read_extract_yaml('Authorization').encode('utf-8')
     # 读取测试用例数据
     test_data = YamlUtil().read_testcase_yaml('case_data.yml')
     # 检查是否成功读取到 token 值
     if token_value is None:
-        raise ValueError("\033[1m\033[31m" + "token为空" + "\033[0m")
-    # 遍历 nft 部分的测试用例数据
-    for case in test_data['nft']:
-        # 检查请求头中是否有 'Authorization' 字段
-        if 'requests' in case and 'headers' in case['requests']:
-            headers = case['requests']['headers']
-            if 'Authorization' in headers:
-                # 将 token 值替换到 'Authorization' 字段中
-                headers['Authorization'] = token_value
+        raise ValueError("\033[1m\033[31m" + "Authorization为空" + "\033[0m")
+    data = YamlUtil().read_testcase_yaml('case_data.yml')
     # 使用 func_yaml 方法处理替换
-    replaced_data = YamlUtil().func_yaml(test_data)
+    replaced_data = YamlUtil().func_yaml(test_data, data)
 
     return [replaced_data]
