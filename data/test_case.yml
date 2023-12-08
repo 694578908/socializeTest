@@ -23,14 +23,38 @@ code_token:
     - equals: {code: 0}
 
 nft:
-- name: 首页
+- name: 获取首页banner
   requests:
     method: get
     url: https://asgsaswec.qyfriend.com/api/socialize/sysBanner/listBanner?type=1
     headers:
       Content-Type: application/json
       Client: member
-      Authorization: ${token}
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 获取新人礼包界面
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysPopping/getDetailById/1
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 获取明星达人
+  requests:
+    method: post
+    url: https://asgsaswec.qyfriend.com/api/socialize/recommendTalent/list
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
     data:
   validate:
     - equals: {code: 0}

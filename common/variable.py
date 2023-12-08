@@ -14,7 +14,7 @@ def variable_code(redis_data):
         log_util.log_info(error_message)
         raise ValueError(error_message)
     # 读取 case_data.yml
-    data = YamlUtil().read_testcase_yaml('case_data.yml')['code_token']
+    data = YamlUtil().read_testcase_yaml('test_case.yml')['code_token']
     value = YamlUtil().func_yaml(data, code)
     print(f"Result: {value}")
     return value
@@ -25,11 +25,11 @@ def variable_token():
     # 从 extract.yml 中读取 token 的值
     token_value = YamlUtil().read_extract_yaml('Authorization').encode('utf-8')
     # 读取测试用例数据
-    test_data = YamlUtil().read_testcase_yaml('case_data.yml')
+    test_data = YamlUtil().read_testcase_yaml('test_case.yml')
     # 检查是否成功读取到 token 值
     if token_value is None:
         raise ValueError("\033[1m\033[31m" + "Authorization为空" + "\033[0m")
-    data = YamlUtil().read_testcase_yaml('case_data.yml')
+    data = YamlUtil().read_testcase_yaml('test_case.yml')
     # 使用 func_yaml 方法处理替换
     replaced_data = YamlUtil().func_yaml(test_data, data)
 
