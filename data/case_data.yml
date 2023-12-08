@@ -2,8 +2,8 @@ login:
 - name: 登录账号密码
   requests:
     method: get
-    headers: {'Content-Type':'application/json'}
-    url: https://member.dadaplayer.com/api/socialize/login/getCode?type=1&mobile=15881086122
+    headers: {'Content-Type':'application/json','Client':'member'}
+    url: https://asgsaswec.qyfriend.com/api/socialize/login/getCode?type=2&mobile=15881086122
     data:
   validate:
     - equals: {code: 0}
@@ -12,13 +12,9 @@ code_token:
 - name: 提交验证码
   requests:
     method: get
-    url: http://higher8pre.douxiangapp.com/dboxAdmin/v1/security/getToken
-    headers: {'Content-Type':'application/json'}
+    url: https://asgsaswec.qyfriend.com/api/socialize/login/loginTalent?code=${code_value}&mobile=15881086122
+    headers: {'Content-Type':'application/json','Client':'member'}
     data:
-      userName: zqj
-      pwd: 123456
-      code: ${admin_user_key}
-      type: 0
   validate:
     - equals: {code: 0}
 

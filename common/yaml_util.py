@@ -1,5 +1,6 @@
 import os
 import yaml
+import re
 
 
 class YamlUtil:
@@ -32,28 +33,32 @@ class YamlUtil:
                 data = value[key_name]
                 print(data)
                 return value[key_name]
-
             return value
 
     def extra_read_yaml(self, yaml_name, key_name):
-
         data = self.read_testcase_yaml(yaml_name, key_name)
         req_info = data["req_info"]
 
-    def func_yaml(self, data, variable_whitelist=None):
-        if variable_whitelist is None:
-            variable_whitelist = set()  # 默认情况下，白名单为空
+    def func_yaml(self, data, code):
         if isinstance(data, dict):
+            result = {}  # 创建一个新的字典来存储处理后的数据
             for key, value in data.items():
-                if isinstance(value, str) and '${' in value and '}' in value:
-                    start = value.index('${')
-                    end = value.index('}')
-                    func_name = value[start + 2:end]
+                # 递归处理嵌套的字典
+                result[key] = self.func_yaml(value, code)
+            return result
+        elif isinstance(data, list):
+            # 处理列表中的每个项
+            return [self.func_yaml(item, code) for item in data]
+        elif isinstance(data, str):
+            # 使用正则表达式匹配字符串中的 ${variable} 模式
+            matches = re.findall(r'\${(\w+)}', data)
+            for match in matches:
+                print(f"匹配到变量：{match}，代码中的值：{code}")
+                data = data.replace(f'${{{match}}}', str(code))
+            return data  # 返回处理后的字符串
 
-                    if func_name in variable_whitelist:
-                        # 仅当变量名在白名单中时执行替换操作
-                        data[key] = value[0:start] + str(eval(func_name)) + value[end + 1:]
-                elif isinstance(value, dict):
-                    # 递归处理嵌套的字典
-                    data[key] = self.func_yaml(value, variable_whitelist)
+        print(f"处理后的数据：{data}")
         return data
+
+
+

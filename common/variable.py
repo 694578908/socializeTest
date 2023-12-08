@@ -2,24 +2,22 @@ from common import log_util
 from common.yaml_util import YamlUtil
 
 
-# case_data文件的${}变量替换成extract文件admin_user_的值
+# case_data文件的${}变量替换成extract文件get_mobile_code_key的值
 def variable_code(redis_data):
     key = redis_data[4]
     # 从 extract.yml 中读取 admin_user_key 的值
-    code_value = YamlUtil().read_extract_yaml('get_mobile_code_key' + key)
+    code = YamlUtil().read_extract_yaml('get_mobile_code_key:' + key)
     # 读取测试用例数据
-    if code_value is None:
-        # 如果提取数据为None，可以抛出异常或者返回一个默认值
-        error_message = "\033[1m\033[31m" + f"{'admin_user_' + key}未获取到验证码，请检查conftest.py手机号或case_data.yml账号密码是否正确" + "\033[0m"
+    if code is None:
+        # 如果提取数据为 None，可以抛出异常或者返回一个默认值
+        error_message = "\033[1m\033[31m" + f"{'get_mobile_code_key:' + key}未获取到验证码，请检查conftest.py手机号或case_data.yml账号密码是否正确" + "\033[0m"
         log_util.log_info(error_message)
         raise ValueError(error_message)
-    # 读取case_data.yml
-    data = YamlUtil().read_testcase_yaml('case_data.yml')
-    # 将case_data.yml文件code 的值替换到测试用例数据中
-    data['code_token'][0]['requests']['data']['code'] = code_value
-    value = YamlUtil().func_yaml(data)
+    # 读取 case_data.yml
+    data = YamlUtil().read_testcase_yaml('case_data.yml')['code_token']
+    value = YamlUtil().func_yaml(data, code)
     print(f"Result: {value}")
-    return [value]
+    return value
 
 
 # case_data文件的${}变量替换成extract文件Authorization的值

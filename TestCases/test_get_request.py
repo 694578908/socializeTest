@@ -3,7 +3,6 @@ import jsonpath
 import pytest
 import allure
 
-
 from common import log_util
 from common.redis_extract import read_redis
 from common.request_util import RequestUtil
@@ -11,8 +10,8 @@ from common.variable import variable_token, variable_code
 from common.yaml_util import YamlUtil
 from common.count import count
 
-@pytest.mark.skip(reason="暂不执行")
-@allure.epic('龙之岛后台')
+
+@allure.epic('社交')
 class TestRequest:
 
     # 登录账号密码
@@ -55,8 +54,7 @@ class TestRequest:
     @allure.feature('登录功能模块')
     @allure.title('提交验证码')
     def test_case_gettoken(self, redis_data):
-        data = variable_code(redis_data)
-        value = data[0]['code_token']
+        value = variable_code(redis_data)
         for case in value:
             count(case)  # 打印用例执行次数
             if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
@@ -70,7 +68,7 @@ class TestRequest:
                     res = (json.loads(result))
                     log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
                     log_util.log_info('实际结果接口返回信息为:{}'.format(result))
-                    message = json.loads(result)['message']
+                    message = json.loads(result)['data']['access_token']
                     YamlUtil().write_extract_yaml({'token': message})  # 写入token到extract.yml
                     log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
