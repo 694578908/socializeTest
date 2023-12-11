@@ -45,7 +45,7 @@ class TestRequest:
                     try:
                         assert res['code'] == case['validate'][0]['equals']['code']
                         allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言成功")
-                    except AssertionError as e:
+                    except AssertionError:
                         allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
             else:
                 print("在yml文件requests目录下必须要有method,url,data")
@@ -85,7 +85,7 @@ class TestRequest:
                         try:
                             assert res['code'] == case['validate'][0]['equals']['code']
                             allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言成功")
-                        except AssertionError as e:
+                        except AssertionError:
                             allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
                 else:
                     print("在yml文件requests目录下必须要有method,url,data,headers")
@@ -123,7 +123,7 @@ class TestRequest:
                         try:
                             assert res['code'] == case['validate'][0]['equals']['code']
                             allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言成功")
-                        except AssertionError as e:
+                        except AssertionError:
                             allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
                 else:
                     print("在yml文件requests目录下必须要有method,url,data,headers")
