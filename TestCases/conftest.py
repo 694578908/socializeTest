@@ -25,12 +25,12 @@ def redis_data():
 # log日志参数配置项
 @pytest.fixture(scope='session', autouse=True)
 def log_data():
-    dirname = 'log'  # 文件夹名称
-    log_name = '{}.log'  # 文件名，默认为空
-    log_name_format = "%Y-%m-%d"  # 默认文件名以年-月-日格式显示
-    log_level = logging.DEBUG  # 日志等级
-    log_format = '[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s'  # 日志格式
-    disable_logging = True  # True开启日志，False关闭日志
+    dirname = read_ini()['log']['dirname']  # 文件夹名称
+    log_name = read_ini()['log']['log_name']  # 文件名，默认为空
+    log_name_format = read_ini()['log']['log_name_format']  # 默认文件名以年-月-日格式显示
+    log_level = read_ini()['log']['log_level']  # 日志等级
+    log_format = read_ini()['log']['log_format']  # 日志格式
+    disable_logging = read_ini()['log']['disable_logging']  # True开启日志，False关闭日志
 
     data = (dirname, log_name, log_name_format, log_level, log_format)
     disable_log(disable_logging, data)
@@ -48,15 +48,7 @@ def clear_extract_yaml():
 @pytest.fixture(scope="session", autouse=True)
 def clear_log():
     # 设置过期时间（以小时为单位）
-    expiration_hours = 48
+    expiration_hours = read_ini()['log']['expiration_hours']
     clear_logs(expiration_hours)
     yield
 
-
-# 定时清除log日志
-@pytest.fixture(scope="session", autouse=True)
-def clear_log():
-    # 设置过期时间（以小时为单位）
-    expiration_hours = 48
-    clear_logs(expiration_hours)
-    yield
