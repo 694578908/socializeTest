@@ -56,5 +56,6 @@ nft:
       Client: member
       Authorization: ${Authorization}
     data:
+      {}
   validate:
     - equals: {code: 0}
