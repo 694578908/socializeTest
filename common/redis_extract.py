@@ -8,8 +8,8 @@ def read_redis(redis_data):
     host, password, port, db, key = redis_data
     redis_client = redis.StrictRedis(host=host, port=port, password=password, db=db, decode_responses=True)
 
-    folder_key = 'get_mobile_code_key'
-    full_key = f'{folder_key}:{key}'
+    folder_key = 'get_mobile_code_key:1'
+    full_key = folder_key + key
     value = redis_client.get(full_key)
 
     if value is None:

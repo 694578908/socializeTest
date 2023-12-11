@@ -1,14 +1,8 @@
 import pytest
 import logging
-# import os
-# import sys
-# sys.path.append(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-
-
 from common.ReadFile import read_ini
 from common.log_util import clear_logs, disable_log
 from common.yaml_util import YamlUtil
-
 
 # redis参数配置项
 @pytest.fixture(scope='session')

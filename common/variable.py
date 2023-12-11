@@ -6,11 +6,11 @@ from common.yaml_util import YamlUtil
 def variable_code(redis_data):
     key = redis_data[4]
     # 从 extract.yml 中读取 admin_user_key 的值
-    code = YamlUtil().read_extract_yaml('get_mobile_code_key:' + key)
+    code = YamlUtil().read_extract_yaml('get_mobile_code_key:1' + key)
     # 读取测试用例数据
     if code is None:
         # 如果提取数据为 None，可以抛出异常或者返回一个默认值
-        error_message = "\033[1m\033[31m" + f"{'get_mobile_code_key:' + key}未获取到验证码，请检查conftest.py手机号或case_data.yml账号密码是否正确" + "\033[0m"
+        error_message = "\033[1m\033[31m" + f"{'get_mobile_code_key:1' + key}未获取到验证码，请检查conftest.py手机号或case_data.yml账号密码是否正确" + "\033[0m"
         log_util.log_info(error_message)
         raise ValueError(error_message)
     # 读取 case_data.yml
