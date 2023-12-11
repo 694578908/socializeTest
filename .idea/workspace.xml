@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e5e2ad6e-382f-42f9-9d90-747888ee4ee8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/test_get_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_get_request.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/extract.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/extract.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
@@ -28,8 +29,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/common/yaml_util.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2133">
-                  <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+                <state relative-caret-position="192">
+                  <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
                   </folding>
@@ -38,19 +39,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$APPLICATION_HOME_DIR$/lib/http/client.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="282">
-                  <caret line="1226" column="58" lean-forward="true" selection-start-line="1226" selection-start-column="58" selection-end-line="1226" selection-end-column="58" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+                <state relative-caret-position="325">
+                  <caret line="119" column="127" selection-start-line="119" selection-start-column="127" selection-end-line="119" selection-end-column="127" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -139,8 +131,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/data/test_case.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="46">
-                  <caret line="48" selection-end-line="60" />
+                <state relative-caret-position="259">
+                  <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -226,8 +218,8 @@
         <option value="$PROJECT_DIR$/data/case.yml" />
         <option value="$PROJECT_DIR$/data/test_case.yml" />
         <option value="$PROJECT_DIR$/common/variable.py" />
-        <option value="$PROJECT_DIR$/TestCases/test_get_request.py" />
         <option value="$APPLICATION_HOME_DIR$/lib/http/client.py" />
+        <option value="$PROJECT_DIR$/TestCases/test_get_request.py" />
       </list>
     </option>
   </component>
@@ -271,25 +263,24 @@
             <path>
               <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
               <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
+              <item name="reports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
+              <item name="reports" type="462c0819:PsiDirectoryNode" />
+              <item name="allure-report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
+              <item name="reports" type="462c0819:PsiDirectoryNode" />
+              <item name="allure-temp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
               <item name="TestCases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -528,7 +519,7 @@
       <workItem from="1702257426823" duration="22000" />
       <workItem from="1702257678119" duration="41000" />
       <workItem from="1702257729701" duration="19000" />
-      <workItem from="1702257759993" duration="1034000" />
+      <workItem from="1702257759993" duration="1429000" />
     </task>
     <task id="LOCAL-00001" summary="去掉conftest的注释">
       <created>1695397876875</created>
@@ -775,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702033693345</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="修改代码">
+      <created>1702258992254</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702258992254</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -787,7 +785,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160671000" />
+    <option name="totallyTimeSpent" value="161066000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -807,7 +805,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44468546" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39045554" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.54121476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -892,7 +890,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_in_test_user_py.coverage" NAME="pytest in test_user.py Coverage Results" MODIFIED="1696914395613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_for_test_user_TestUser_test_user_login.coverage" NAME="pytest for test_user.TestUser.test_user_login Coverage Results" MODIFIED="1696911993647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
-    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1702258804472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1702259173794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$RestClient.coverage" NAME="RestClient Coverage Results" MODIFIED="1696830895563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$test_user.coverage" NAME="test_user Coverage Results" MODIFIED="1696902678216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Merchant$run.coverage" NAME="run Coverage Results" MODIFIED="1695723630584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
@@ -1114,13 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reports/allure-report/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -1217,27 +1208,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test_case.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="48" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/extract.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1251,20 +1225,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/lib/http/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="1226" column="58" selection-start-line="1226" selection-start-column="58" selection-end-line="1226" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/yaml_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2133">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="192">
+          <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/lib/http/client.py">
+    <entry file="file://$PROJECT_DIR$/data/test_case.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="1226" column="58" lean-forward="true" selection-start-line="1226" selection-start-column="58" selection-end-line="1226" selection-end-column="58" />
+        <state relative-caret-position="259">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/allure-report/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="119" column="127" selection-start-line="119" selection-start-column="127" selection-end-line="119" selection-end-column="127" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
