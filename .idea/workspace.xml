@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5e2ad6e-382f-42f9-9d90-747888ee4ee8" name="Default Changelist" comment="修改conftest变量和增加config注释">
+    <list default="true" id="e5e2ad6e-382f-42f9-9d90-747888ee4ee8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/test_get_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_get_request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/extract.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/extract.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.89017737">
+    <splitter split-orientation="horizontal" split-proportion="0.6568895">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -60,8 +57,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="64" />
+                <state relative-caret-position="2201">
+                  <caret line="119" column="82" lean-forward="true" selection-start-line="119" selection-start-column="82" selection-end-line="119" selection-end-column="82" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -119,7 +116,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/data/test_case.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="141">
+                <state relative-caret-position="424">
                   <caret line="96" column="104" selection-start-line="96" selection-start-column="104" selection-end-line="96" selection-end-column="104" />
                 </state>
               </provider>
@@ -517,7 +514,7 @@
       <workItem from="1702257678119" duration="41000" />
       <workItem from="1702257729701" duration="19000" />
       <workItem from="1702257759993" duration="2895000" />
-      <workItem from="1702261342855" duration="7020000" />
+      <workItem from="1702261342855" duration="7177000" />
     </task>
     <task id="LOCAL-00001" summary="去掉conftest的注释">
       <created>1695397876875</created>
@@ -806,7 +803,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702266261977</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="修改请求方式和请求地址">
+      <created>1702269727068</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1702269727068</updated>
+    </task>
+    <task id="LOCAL-00043" summary="修改请求方式和请求地址">
+      <created>1702269788223</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1702269788223</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -818,7 +829,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169552000" />
+    <option name="totallyTimeSpent" value="169709000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -838,7 +849,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4902386" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4902386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27874187" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -884,7 +895,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改allure模块" />
     <MESSAGE value="增加插件和代码的刷新输出缓冲区" />
     <MESSAGE value="增加清除临时文件命令" />
     <MESSAGE value="增加allure断言状态等" />
@@ -909,7 +919,8 @@
     <MESSAGE value="添加接口用例" />
     <MESSAGE value="修改config变量" />
     <MESSAGE value="修改conftest变量和增加config注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改conftest变量和增加config注释" />
+    <MESSAGE value="修改请求方式和请求地址" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改请求方式和请求地址" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1260,7 +1271,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/test_case.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="424">
           <caret line="96" column="104" selection-start-line="96" selection-start-column="104" selection-end-line="96" selection-end-column="104" />
         </state>
       </provider>
@@ -1274,8 +1285,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="64" />
+        <state relative-caret-position="2201">
+          <caret line="119" column="82" lean-forward="true" selection-start-line="119" selection-start-column="82" selection-end-line="119" selection-end-column="82" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
