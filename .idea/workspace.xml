@@ -2,7 +2,109 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e2ad6e-382f-42f9-9d90-747888ee4ee8" name="Default Changelist" comment="修改redis">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/redis_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/redis_extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/variable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/extract.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/extract.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/103040aa6c960b86.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/1184589a382632ae.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/1aba7d6b68cce293.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/1de1fa3832f8225d.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/3527c3b2fbd49223.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/3a9cec96a66ef1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/3aeb5a6f33c7f050.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/42bfb759f209e2e4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/43c195c99efbb60f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/4ae5fa392978b01d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/4f175ae6f2c0e616.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/5acc9bde0d1efef6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/6fe002add33a3e9b.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/7784c0993abd1254.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/7ba40e917b897d0f.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/7c5098596235c785.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/7fd179d7d46eb5ea.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/94234a2248477610.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/94e39009a63cecb8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/97d7a69017ce79d2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/9a9f2bc9719d4037.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/9cc265bc63cca7e7.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/9ff21188315513cf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/a7f39078edbeb1c7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/a9133c970ebfb46b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/aa00d86ec6c090fe.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/ad95aea1fe1e9203.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/b03ea5836bb61d8b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/bc5172f589a6a184.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/cf52fe3e3e90fe0f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/d38274962d7f1cb9.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/df10670466d38fa9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/eaf01e12241004b8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/f76b63fc1d41d939.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/attachments/fb1b555209d1e00e.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/behaviors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/packages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/suites.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/test-cases/5bb10103d6370c37.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/test-cases/94011455684776b8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/test-cases/afd6a0824e694cca.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/timeline.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/export/influxDbData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/export/prometheusData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/history/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/duration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/severity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/status-chart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/090edc4c-a7d0-465c-ad71-eaf5a7cd2d4c-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/13536d0a-cba6-41da-af1e-5879945831c9-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/2f9062c8-5106-4a0d-903c-0de774d682e8-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/2fd17a53-a18a-4b39-bba1-ecf254096ec3-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/32126b34-88d6-425e-94c2-61fc97008095-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/3b60b9f3-184d-47fb-bf62-24923fb26b7d-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/494a8fad-3f9c-40ea-be36-fe6c6e07eadc-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/4a197ae6-cc2f-42b1-bb29-075e400c1bdf-attachment.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/4fdc97b0-53d6-45e8-9433-70d76bbfbb91-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/69971c38-812a-4cbb-8079-37a2bfd73426-attachment.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/6ba008ea-cd9f-49a6-9ee8-97cd4a6e1047-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/6fe1ec72-b07c-4559-8597-344543d1798a-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/72ff0920-296a-4af4-b3d2-f3815153a0c5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/76c6fb4e-b606-4576-ae9c-31c905621013-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/79d61305-8f2e-47c1-9c8b-08919ea49a3a-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/804030b6-59c6-4773-9d27-b69015620372-attachment.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/8b3f508c-9b83-4048-b540-d68e13d544bf-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/8e6a6609-d69f-4383-9e2a-0495f9fd6ab6-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/a05e8159-dadb-44fa-9fc9-d0a5b8f13288-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/a87c7d3e-2f22-426e-ad3b-35b2e6339bda-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/b71ca021-e063-42c6-8480-740cda978261-attachment.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/b72a1472-3339-46d1-af7f-4b78c1159895-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/bb68badf-4d1e-4629-b2d9-c79cabd1bd71-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/bd14589d-8c6c-4ca1-9310-b346e30a6f9a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/c1e50057-8d3e-4967-8cba-7514ba6320ec-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/c31e0286-1f35-4287-b0ed-e8563faab828-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/c6e8d916-8812-4c92-b727-fd325ebece89-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/d66e09ee-4007-4002-9d52-4ad0e4e2a0f0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/d6c7c9bf-9ca2-474f-98fb-f82cec908013-attachment.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/db778173-8d66-455c-b1c1-6f7d8b8de119-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/dd5064c5-8663-43b6-841d-6437d8f03d74-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/ddb6ae7c-e00d-4d85-8c30-35ba4aa56ad0-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/defdc03f-f0d5-4a3e-84da-641ca38d9c15-attachment.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/dfe5f620-9404-4a37-927c-b1c365ffdd0d-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/e2c775f7-fe8e-46a4-a444-652d34b0265f-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/e6042430-ad60-45a0-ac03-35aab6cf7b72-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/e6da3e6c-98d6-442a-91dd-26b355fd1c60-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/eb0dc015-20ce-470e-9c14-fbe63754eb03-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/ed3da9b1-3ca8-4012-96f5-27a2db51099a-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/ed745b58-21b7-4617-857a-2d3f30f3b8c8-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/f428a493-065d-4491-a7bc-8ec487bc9322-attachment.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/fbf387c6-cd8f-41b9-8e75-cb7c91f4ae33-attachment.attach" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/allure-temp/fead59f6-fe76-48d5-bf58-a1375ca06357-attachment.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,10 +120,19 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/TestCases/conftest.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+                <state relative-caret-position="-465">
+                  <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/common/yaml_util.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1026">
+                  <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
                   <folding>
-                    <element signature="e#0#13#0" expanded="true" />
+                    <element signature="e#0#9#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -31,7 +142,7 @@
             <entry file="file://$PROJECT_DIR$/TestCases/run.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="155">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -42,7 +153,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
+                <state relative-caret-position="2697">
                   <caret line="97" selection-start-line="97" selection-end-line="97" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
@@ -51,29 +162,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/redis/_parsers/encoders.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="899">
-                  <caret line="29" selection-start-line="29" selection-end-line="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_callers.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="582">
-                  <caret line="88" selection-start-line="88" selection-end-line="88" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/common/redis_extract.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+                <state relative-caret-position="403">
+                  <caret line="15" column="91" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="91" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
                   </folding>
@@ -84,10 +177,22 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/common/variable.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+                <state relative-caret-position="372">
+                  <caret line="12" column="103" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="112" />
                   <folding>
                     <element signature="e#0#27#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/common/log_util.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="54" selection-start-line="54" selection-end-line="54" />
+                  <folding>
+                    <element signature="e#0#14#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -97,16 +202,16 @@
             <entry file="file://$PROJECT_DIR$/data/extract.yml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="31">
-                  <caret line="1" column="51" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="51" />
+                  <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config.ini">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="310">
-                  <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+                <state relative-caret-position="186">
+                  <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -127,8 +232,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/data/test_case.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="424">
-                  <caret line="96" column="104" selection-start-line="96" selection-start-column="104" selection-end-line="96" selection-end-column="104" />
+                <state relative-caret-position="454">
+                  <caret line="104" selection-start-line="104" selection-end-line="104" />
                 </state>
               </provider>
             </entry>
@@ -223,9 +328,9 @@
         <option value="$PROJECT_DIR$/common/ReadFile.py" />
         <option value="$PROJECT_DIR$/TestCases/test_get_request.py" />
         <option value="$PROJECT_DIR$/config.ini" />
-        <option value="$PROJECT_DIR$/common/redis_extract.py" />
-        <option value="$PROJECT_DIR$/common/variable.py" />
         <option value="$PROJECT_DIR$/TestCases/conftest.py" />
+        <option value="$PROJECT_DIR$/common/variable.py" />
+        <option value="$PROJECT_DIR$/common/redis_extract.py" />
       </list>
     </option>
   </component>
@@ -244,13 +349,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
               <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
+              <item name=".pytest_cache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
@@ -265,33 +374,37 @@
             <path>
               <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
               <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
               <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
-              <item name="allure-report" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
               <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCases" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="PyCharm Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -528,6 +641,12 @@
       <workItem from="1702261342855" duration="7177000" />
       <workItem from="1702269951017" duration="49000" />
       <workItem from="1702274184613" duration="1120000" />
+      <workItem from="1702276120413" duration="457000" />
+      <workItem from="1702276591036" duration="158000" />
+      <workItem from="1702279376078" duration="792000" />
+      <workItem from="1702280181405" duration="42000" />
+      <workItem from="1702280940306" duration="306000" />
+      <workItem from="1702287218702" duration="119000" />
     </task>
     <task id="LOCAL-00001" summary="去掉conftest的注释">
       <created>1695397876875</created>
@@ -844,7 +963,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702275209091</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="修改redis">
+      <created>1702276268275</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1702276268275</updated>
+    </task>
+    <task id="LOCAL-00047" summary="修改redis">
+      <created>1702276436233</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1702276436233</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -856,9 +989,9 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170878000" />
+    <option name="totallyTimeSpent" value="172752000" />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -871,16 +1004,16 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2228145" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23720682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24295011" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23644252" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.64642084" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.3286334" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32827735" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286334" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -920,6 +1053,46 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加清除临时文件命令" />
@@ -961,7 +1134,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_in_test_user_py.coverage" NAME="pytest in test_user.py Coverage Results" MODIFIED="1696914395613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_for_test_user_TestUser_test_user_login.coverage" NAME="pytest for test_user.TestUser.test_user_login Coverage Results" MODIFIED="1696911993647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
-    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1702275125553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1702287268949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$RestClient.coverage" NAME="RestClient Coverage Results" MODIFIED="1696830895563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$test_user.coverage" NAME="test_user Coverage Results" MODIFIED="1696902678216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Merchant$run.coverage" NAME="run Coverage Results" MODIFIED="1695723630584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
@@ -972,20 +1145,6 @@
     <SUITE FILE_PATH="coverage/Longdao_Backstage$ReadFile.coverage" NAME="ReadFile Coverage Results" MODIFIED="1696734898861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/config/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="169" selection-start-line="169" selection-end-line="169" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/lib/sre_parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="942" selection-start-line="942" selection-end-line="942" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/lib/sre_compile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -1116,28 +1275,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/yaml_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="853">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/count.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/log_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reports/allure-report/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1173,27 +1312,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test_case.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="96" column="104" selection-start-line="96" selection-start-column="104" selection-end-line="96" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4154">
-          <caret line="134" column="8" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/color.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/request_util.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1233,13 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_callers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/redis/_parsers/encoders.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="899">
@@ -1247,22 +1358,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/redis_extract.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/_callers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="2356">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCases/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/variable.py">
+    <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="2697">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1270,7 +1394,14 @@
     <entry file="file://$PROJECT_DIR$/data/extract.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="51" />
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1281,40 +1412,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
+    <entry file="file://$PROJECT_DIR$/data/test_case.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="454">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4154">
+          <caret line="134" column="8" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCases/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="-465">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/log_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCases/run.py">
+    <entry file="file://$PROJECT_DIR$/common/variable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="372">
+          <caret line="12" column="103" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="112" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
+    <entry file="file://$PROJECT_DIR$/common/yaml_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="-1026">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/redis_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="15" column="91" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

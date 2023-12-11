@@ -13,7 +13,7 @@ def read_redis(redis_data):
     value = redis_client.get(full_key)
 
     if value is None:
-        error_message = "\033[1m\033[31m" + f"{full_key}未获取到验证码，请检查conftest.py手机号或case_data.yml账号密码是否正确" + "\033[0m"
+        error_message = "\033[1m\033[31m" + f"{full_key}未获取到验证码，请检查conftest.py手机号或test_case.yml账号密码是否正确" + "\033[0m"
         log_util.log_info(error_message)
         raise ValueError(error_message)
 
