@@ -28,9 +28,10 @@ def log_data():
     dirname = read_ini()['log']['dirname']  # 文件夹名称
     log_name = read_ini()['log']['log_name']  # 文件名，默认为空
     log_name_format = read_ini()['log']['log_name_format']  # 默认文件名以年-月-日格式显示
-    log_level = read_ini()['log']['log_level']  # 日志等级
+    log_level = getattr(logging, read_ini()['log']['log_level'], logging.DEBUG)  # 日志等级
     log_format = read_ini()['log']['log_format']  # 日志格式
-    disable_logging = read_ini()['log']['disable_logging']  # True开启日志，False关闭日志
+    disable_logging_str = read_ini()['log']['disable_logging'].lower()
+    disable_logging = disable_logging_str != 'false'  # True开启日志，False关闭日志
 
     data = (dirname, log_name, log_name_format, log_level, log_format)
     disable_log(disable_logging, data)
@@ -48,7 +49,7 @@ def clear_extract_yaml():
 @pytest.fixture(scope="session", autouse=True)
 def clear_log():
     # 设置过期时间（以小时为单位）
-    expiration_hours = read_ini()['log']['expiration_hours']
+    expiration_hours = int(read_ini()['log']['expiration_hours'])
     clear_logs(expiration_hours)
     yield
 

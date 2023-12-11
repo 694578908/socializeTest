@@ -87,9 +87,6 @@ class YamlUtil:
         elif isinstance(data, str):
             matches = re.findall(r'\${(\w+)}', data)
             for match in matches:
-                print(f"匹配到变量：{match}，代码中的值：{code}")
                 data = data.replace(f'${{{match}}}', str(code))
             return data
-
-        print(f"处理后的数据：{data}")
         return data

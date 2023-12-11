@@ -7,7 +7,6 @@ from common import log_util
 def read_redis(redis_data):
     host, password, port, db, key = redis_data
     redis_client = redis.StrictRedis(host=host, port=port, password=password, db=db, decode_responses=True)
-    print(redis_client)
 
     folder_key = 'get_mobile_code_key'
     full_key = f'{folder_key}:{key}'

@@ -16,7 +16,6 @@ def variable_code(redis_data):
     # 读取 case_data.yml
     data = YamlUtil().read_testcase_yaml('test_case.yml')['code_token']
     value = YamlUtil().func_yaml(data, code)
-    print(f"Result: {value}")
     return value
 
 
@@ -32,5 +31,4 @@ def variable_token():
     data = YamlUtil().read_testcase_yaml('test_case.yml')
     # 使用 func_yaml 方法处理替换
     replaced_data = YamlUtil().func_yaml(test_data, data)
-
     return [replaced_data]

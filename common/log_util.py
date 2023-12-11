@@ -60,12 +60,13 @@ def disable_log(disable_logging, data):
 
 # 定义计算当前时间-文件创建时间是否大于超时时间
 def clear_logs(expiration_hours):
+    expiration_hours = int(expiration_hours)
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     log_path = os.path.join(current_dir, "log")
     current_time = datetime.now()
     if os.path.exists(log_path):
         for filename in os.listdir(log_path):
-            file_path = os.path.join(log_path,filename)
+            file_path = os.path.join(log_path, filename)
             if os.path.isfile(file_path):
                 file_mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
                 time_difference = current_time - file_mtime
