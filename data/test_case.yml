@@ -102,3 +102,45 @@ nft:
     data:
   validate:
     - equals: {code: 0}
+
+- name: 获取更多分类
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/serviceCategory/getListClient
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 获取广场banner
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysBanner/listBanner?type=2
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 获取广场热门动态
+  requests:
+    method: post
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysTalentTrends/list
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+      pageSize: 10
+      pageNum: 1
+      type: 1
+      sex: 2
+      longitude: 104.066301
+      latitude: 30.572961
+  validate:
+    - equals: {code: 0}
