@@ -56,7 +56,7 @@ class TestRequest:
     @allure.feature('登录功能模块')
     @allure.title('提交验证码')
     def test_case_gettoken(self, redis_data):
-        value = variable_code(redis_data)
+        value = variable_code(redis_data)[0]['code_token']
         for case in value:
             count(case)  # 打印用例执行次数
             if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
@@ -95,8 +95,7 @@ class TestRequest:
     @allure.feature('接口功能模块')
     @allure.title("接口参数效验")
     def test_case_nft(self):
-        data = variable_token()
-        value = data[0]['nft']
+        value = variable_token()[0]['nft']
         for case in value:
             count(case)  # 打印用例执行次数
             if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():

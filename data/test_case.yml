@@ -5,7 +5,7 @@ login:
     headers:
       Content-Type: application/json
       Client: member
-    url: https://asgsaswec.qyfriend.com/api/socialize/login/getCode?type=1&mobile=15881086122
+    url: https://asgsaswec.qyfriend.com/api/socialize/login/getCode?type=1&mobile=15881086123
     data:
   validate:
     - equals: {code: 0}
@@ -14,7 +14,7 @@ code_token:
 - name: 提交验证码
   requests:
     method: get
-    url: https://asgsaswec.qyfriend.com/api/socialize/login/loginMember?code=${code}&mobile=15881086122
+    url: https://asgsaswec.qyfriend.com/api/socialize/login/loginMember?code=${code}&mobile=15881086123
     headers:
       Content-Type: application/json
       Client: member
