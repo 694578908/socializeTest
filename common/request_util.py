@@ -11,7 +11,8 @@ class RequestUtil:
         rep = None
 
         if method == 'get':
-            rep = RequestUtil.session.request(method=method, url=url, params=data, **kwargs)
+            rep = RequestUtil.session.request(method=method, url=url, params=data, headers=headers, **kwargs)
+
         else:
             data = json.dumps(data)
             rep = RequestUtil.session.request(method=method, data=data, url=url, headers=headers, **kwargs)
