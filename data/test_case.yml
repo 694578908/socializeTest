@@ -145,19 +145,6 @@ nft:
   validate:
     - equals: {code: 0}
 
-- name: 下单
-  requests:
-    method: post
-    url: https://asgsaswec.qyfriend.com/api/socialize/sysTalent/getTalentDetailByTalentId
-    headers:
-      Content-Type: application/json
-      Client: member
-      Authorization: ${Authorization}
-    data:
-      talentId: '1721707864438915073'
-  validate:
-    - equals: {code: 0}
-
 - name: 获取会员中心
   requests:
     method: get
@@ -186,6 +173,190 @@ nft:
   requests:
     method: get
     url: https://asgsaswec.qyfriend.com/api/socialize/sysMemberAttention/attentionOperation?talentId=1721707864438915073&operationResult=true
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 取消关注
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysMemberAttention/attentionOperation?talentId=1721707864438915073&operationResult=false
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 下单
+  requests:
+    method: post
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysTalent/getTalentDetailByTalentId
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+      talentId: '1721707864438915073'
+  validate:
+    - equals: {code: 0}
+
+- name: 获取订单支付页面
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysTalentService/detail?talentId=1721707864438915073&sysTalentServiceId=1733008164322652161&memberAddressId=1721784549268426753&count=1
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 获取订单详情
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/member/order/detailByOrderItemId?orderItemId=1738134493029134338
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 入驻达人
+  requests:
+    method: post
+    url: https://asgsaswec.qyfriend.com/api/socialize/talentSettledPlatformLog/creat
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+      sex: 1
+      birth: '2003-06-15'
+      height: '160'
+      weight: '45'
+      changeService:
+        - id: '1721737820736028673'
+      changeImg:
+        - >-
+          https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/4f10ae7851b94b638ed405fcf5d239d3.jpg
+        - >-
+          https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/23cda160c28f436b8dabfb629c26dee9.jpg
+        - >-
+          https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/d6ac741e41684963bb034cb9c324285b.jpg
+        - >-
+          https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/0e9ed64adfc44f56bfd091ed1fc6bc37.jpg
+      remark: '11'
+  validate:
+    - equals: {code: 0}
+
+- name: 发布动态
+  requests:
+    method: post
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysTalentTrends/releaseTrendsFromClient
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+      urls: '[]'
+      longitude: null
+      latitude: null
+      content: '1111'
+      addrDetail: null
+      type: '1'
+      coverImageUrl: null
+      sysMemberResourcesId: null
+  validate:
+    - equals: {code: 0}
+
+- name: 添加新地址
+  requests:
+    method: post
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysMemberAddr/member/creat
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+      contactName: 小问
+      contactPhone: '15881086123'
+      addrDetailInfo: '103'
+      isDefault: 1
+      addressSelect:
+        name: 御仙休闲会所
+        id: B0G05UJ8TP
+        location: '104.066288,30.572924'
+        type: 生活服务;洗浴推拿场所;洗浴推拿场所
+        typecode: '071400'
+        pname: 四川省
+        cityname: 成都市
+        adname: 武侯区
+        address: 锦悦西路(孵化园地铁站E1口步行390米)
+        pcode: null
+        citycode: null
+        adcode: null
+        distance: 4m
+        parent: '[]'
+  validate:
+    - equals: {code: 0}
+
+- name: 获取地址列表
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysMemberAddr/member/list?pageSize=10&pageNum=1
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 删除地址
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysMemberAddr/member/remove/1738140219798659074
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 编辑我的资料
+  requests:
+    method: post
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysMember/update
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+      nickname: 郑秋杰1
+      mobile: '14555555555'
+      id: '1729394036937908226'
+      labelList:
+        - name: 大师傅但
+          id: '1732691662542139393'
+      headUrl: >-
+        https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/014e04faa816436594a5cc0df34e2e92.png
+  validate:
+    - equals: {code: 0}
+
+- name: 获取我的资料
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysMember/getUserInfo
     headers:
       Content-Type: application/json
       Client: member
