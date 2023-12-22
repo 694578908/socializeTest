@@ -5,7 +5,6 @@
     <title>Allure Report</title>
     <link rel="favicon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="plugin/custom-logo/styles.css">
     <link rel="stylesheet" type="text/css" href="plugin/screen-diff/styles.css">
 </head>
 <body>
@@ -25,9 +24,11 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-FVWC4GKEYS');
-        gtag('allureVersion', 'dev')
-        gtag('reportUuid', '1df58930-5f0c-4797-8442-3232d694a8fe')
+        gtag('config', 'G-FVWC4GKEYS', {
+          'allureVersion': 'dev',
+          'reportUuid': 'aa696ac8-5bff-4b41-a4b8-dcee3068a688',
+          'single_file': false
+        });
     </script>
 </body>
 </html>
