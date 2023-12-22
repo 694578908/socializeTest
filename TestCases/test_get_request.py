@@ -38,6 +38,8 @@ class TestRequest:
                     request_info = {"method": method, "url": url}
                     allure.attach(json.dumps(request_info, ensure_ascii=False, indent=2), name="请求地址",
                                   attachment_type=allure.attachment_type.JSON)
+                    allure.attach(json.dumps(headers, ensure_ascii=False, indent=2), name="请求头",
+                                  attachment_type=allure.attachment_type.JSON)
                     allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
                                   attachment_type=allure.attachment_type.JSON)
                     allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
@@ -78,6 +80,8 @@ class TestRequest:
                         request_info = {"method": method, "url": url}
                         allure.attach(json.dumps(request_info, ensure_ascii=False, indent=2), name="请求地址",
                                       attachment_type=allure.attachment_type.JSON)
+                        allure.attach(json.dumps(headers, ensure_ascii=False, indent=2), name="请求头",
+                                      attachment_type=allure.attachment_type.JSON)
                         allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
                                       attachment_type=allure.attachment_type.JSON)
                         allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
@@ -114,6 +118,8 @@ class TestRequest:
                     with allure.step(case['name']):
                         request_info = {"method": method, "url": url}
                         allure.attach(json.dumps(request_info, ensure_ascii=False, indent=2), name="请求地址",
+                                      attachment_type=allure.attachment_type.JSON)
+                        allure.attach(json.dumps(headers, ensure_ascii=False, indent=2), name="请求头",
                                       attachment_type=allure.attachment_type.JSON)
                         allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
                                       attachment_type=allure.attachment_type.JSON)
