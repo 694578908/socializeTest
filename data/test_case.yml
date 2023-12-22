@@ -144,3 +144,15 @@ nft:
       latitude: 30.572961
   validate:
     - equals: {code: 0}
+
+- name: 获取优惠券列表
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/memberProperty/list?pageSize=10&pageNum=1&status=0
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
