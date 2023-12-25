@@ -43,6 +43,6 @@ def clear_extract_yaml():
 @pytest.fixture(scope="session", autouse=True)
 def clear_log():
     # 设置过期时间（以小时为单位）
-    expiration_hours = int(read_ini()['log']['expiration_hours'])
+    expiration_hours = int(read_ini()['log_time']['expiration_hours'])
     clear_logs(expiration_hours)
     yield
