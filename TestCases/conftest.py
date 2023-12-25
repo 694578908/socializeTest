@@ -4,45 +4,45 @@ from common.ReadFile import read_ini
 from common.log_util import clear_logs, disable_log
 from common.yaml_util import YamlUtil
 
-# redis²ÎÊıÅäÖÃÏî
+# rediså‚æ•°é…ç½®é¡¹
 @pytest.fixture(scope='session')
 def redis_data():
     host = read_ini()['redis']['host']
     password = read_ini()['redis']['password']
     port = read_ini()['redis']['port']
     db = read_ini()['redis']['db']
-    key = read_ini()['redis']['key']  # ĞèÒª×Ô¶¨ÒåĞŞ¸ÄÏëÒª»ñÈ¡ÊÖ»úÑéÖ¤Âë
+    key = read_ini()['redis']['key']  # éœ€è¦è‡ªå®šä¹‰ä¿®æ”¹æƒ³è¦è·å–æ‰‹æœºéªŒè¯ç 
     data = (host, password, port, db, key)
     return data
 
 
-# logÈÕÖ¾²ÎÊıÅäÖÃÏî
+# logæ—¥å¿—å‚æ•°é…ç½®é¡¹
 @pytest.fixture(scope='session', autouse=True)
 def log_data():
-    dirname = read_ini()['log']['dirname']  # ÎÄ¼ş¼ĞÃû³Æ
-    log_name = read_ini()['log']['log_name']  # ÎÄ¼şÃû£¬Ä¬ÈÏÎª¿Õ
-    log_name_format = read_ini()['log']['log_name_format']  # Ä¬ÈÏÎÄ¼şÃûÒÔÄê-ÔÂ-ÈÕ¸ñÊ½ÏÔÊ¾
-    log_level = getattr(logging, read_ini()['log']['log_level'], logging.DEBUG)  # ÈÕÖ¾µÈ¼¶
-    log_format = read_ini()['log']['log_format']  # ÈÕÖ¾¸ñÊ½
+    dirname = read_ini()['log']['dirname']  # æ–‡ä»¶å¤¹åç§°
+    log_name = read_ini()['log']['log_name']  # æ–‡ä»¶åï¼Œé»˜è®¤ä¸ºç©º
+    log_name_format = read_ini()['log']['log_name_format']  # é»˜è®¤æ–‡ä»¶åä»¥å¹´-æœˆ-æ—¥æ ¼å¼æ˜¾ç¤º
+    log_level = getattr(logging, read_ini()['log']['log_level'], logging.DEBUG)  # æ—¥å¿—ç­‰çº§
+    log_format = read_ini()['log']['log_format']  # æ—¥å¿—æ ¼å¼
     disable_logging_str = read_ini()['log']['disable_logging'].lower()
-    disable_logging = disable_logging_str != 'false'  # True¿ªÆôÈÕÖ¾£¬False¹Ø±ÕÈÕÖ¾
+    disable_logging = disable_logging_str != 'false'  # Trueå¼€å¯æ—¥å¿—ï¼ŒFalseå…³é—­æ—¥å¿—
 
     data = (dirname, log_name, log_name_format, log_level, log_format)
     disable_log(disable_logging, data)
     return data
 
 
-# ÊµÊ±Çå³ıextract.yml
+# å®æ—¶æ¸…é™¤extract.yml
 @pytest.fixture(scope="session", autouse=True)
 def clear_extract_yaml():
     YamlUtil().clear_extract_yaml()
     yield
 
 
-# ¶¨Ê±Çå³ılogÈÕÖ¾
+# å®šæ—¶æ¸…é™¤logæ—¥å¿—
 @pytest.fixture(scope="session", autouse=True)
 def clear_log():
-    # ÉèÖÃ¹ıÆÚÊ±¼ä£¨ÒÔĞ¡Ê±Îªµ¥Î»£©
+    # è®¾ç½®è¿‡æœŸæ—¶é—´ï¼ˆä»¥å°æ—¶ä¸ºå•ä½ï¼‰
     expiration_hours = int(read_ini()['log']['expiration_hours'])
     clear_logs(expiration_hours)
     yield

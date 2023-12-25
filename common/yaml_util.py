@@ -30,8 +30,6 @@ class YamlUtil:
         with open(os.getcwd() + "/data/" + yaml_name, mode='r', encoding='utf-8')as f:
             value = yaml.safe_load(stream=f)
             if key_name:
-                data = value[key_name]
-                print(data)
                 return value[key_name]
             return value
 
