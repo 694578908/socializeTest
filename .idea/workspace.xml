@@ -399,13 +399,6 @@
       <workItem from="1702977286384" duration="4031000" />
       <workItem from="1703211711131" duration="22296000" />
     </task>
-    <task id="LOCAL-00004" summary="修改allure模块">
-      <created>1695651031936</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1695651031936</updated>
-    </task>
     <task id="LOCAL-00005" summary="增加插件和代码的刷新输出缓冲区">
       <created>1695651911365</created>
       <option name="number" value="00005" />
@@ -742,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703494591445</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="编写用例1">
+      <created>1703495175446</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1703495175446</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -846,7 +846,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加allure断言状态等" />
     <MESSAGE value="修改allure文件名allure.py标题格式错乱问题&#10;        # current_param_names = [param.name for param in test_result.parameters]&#10;        # # test_result.parameters.extend([&#10;        # #     Parameter(name=name, value=represent(value))&#10;        # #     for name, value in params.items()&#10;        # #     if name not in current_param_names&#10;        # # ])&#10;        &#10;     修改成test_result.parameters.extend([])" />
     <MESSAGE value="修改配置requirements" />
     <MESSAGE value="修改配置" />
@@ -871,7 +870,8 @@
     <MESSAGE value="修改注释" />
     <MESSAGE value="修改代码" />
     <MESSAGE value="编写用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="编写用例" />
+    <MESSAGE value="编写用例1" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写用例1" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
