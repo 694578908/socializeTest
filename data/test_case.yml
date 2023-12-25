@@ -193,7 +193,7 @@ nft:
   validate:
     - equals: {code: 0}
 
-- name: 下单
+- name: 预约下单服务
   requests:
     method: post
     url: https://asgsaswec.qyfriend.com/api/socialize/sysTalent/getTalentDetailByTalentId
@@ -218,10 +218,39 @@ nft:
   validate:
     - equals: {code: 0}
 
+- name: 下单支付
+  requests:
+    method: post
+    url: https://asgsaswec.qyfriend.com/api/socialize/member/order/orderBuy
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+      talentId: '1721707864438915073'
+      talentServiceId: '1733008444120477698'
+      count: 1
+      userAddressId: '1739113908698554369'
+      userAddress: 哦你哦
+      serviceScheduledBeginTime: '2023-12-25 17:00:00'
+      serviceScheduledBeginTimeStr: '今17:00'
+      serviceScheduledEndTime: ''
+      tripMode: bus
+      taxiFare: 0
+      memberCouponIds: [ ]
+      payType: alipay
+      mixedPaymentFlag: 0
+      faceValue: '0'
+      remark: ''
+      payTotalAmount: 1
+      distance: '8.61'
+  validate:
+    - equals: {code: 0}
+
 - name: 获取订单详情
   requests:
     method: get
-    url: https://asgsaswec.qyfriend.com/api/socialize/member/order/detailByOrderItemId?orderItemId=1738134493029134338
+    url: https://asgsaswec.qyfriend.com/api/socialize/member/order/detailByOrderItemId?orderItemId=1739196250464120834
     headers:
       Content-Type: application/json
       Client: member
@@ -256,7 +285,7 @@ nft:
           https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/0e9ed64adfc44f56bfd091ed1fc6bc37.jpg
       remark: '11'
   validate:
-    - equals: {code: 0}
+    - equals: {code: 510}
 
 - name: 发布动态
   requests:
@@ -357,6 +386,72 @@ nft:
   requests:
     method: get
     url: https://asgsaswec.qyfriend.com/api/socialize/sysMember/getUserInfo
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 获取我的关注列表
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysMemberAttention/getMyAttention?pageNum=1&pageSize=20
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 获取黑名单列表
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/memberBlackList/listClient
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 0}
+
+- name: 拉黑达人
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/memberBlackList/addClient?talentId=1735204105247363073
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+  validate:
+    - equals: {code: 510}
+
+- name: 举报达人
+  requests:
+    method: post
+    url: https://asgsaswec.qyfriend.com/api/socialize/sysTalentTrendsReport/reportTrendsFromClient
+    headers:
+      Content-Type: application/json
+      Client: member
+      Authorization: ${Authorization}
+    data:
+      reportType: 涉及未成年人
+      reportTypeId: '1717079285424234498'
+      reportReason: '111111111111111111111111'
+      reportUrls: >-
+        ["https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/3772ed5af2de418b9357a955c88fe1f7.png"]
+      trendsId: '1723254751037428713'
+  validate:
+    - equals: {code: 0}
+
+- name: 退出登录
+  requests:
+    method: get
+    url: https://asgsaswec.qyfriend.com/api/socialize/login/loginMemberOut
     headers:
       Content-Type: application/json
       Client: member
