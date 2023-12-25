@@ -42,7 +42,7 @@ def clear_extract_yaml():
 # 定时清除log日志
 @pytest.fixture(scope="session", autouse=True)
 def clear_log():
-    # 设置过期时间（以小时为单位）
-    expiration_hours = int(read_ini()['log']['expiration_hours'])
+    #   设置日志过期时间自动清理（以小时为单位）
+    expiration_hours = 48
     clear_logs(expiration_hours)
     yield
