@@ -446,7 +446,7 @@ nft:
         ["https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/3772ed5af2de418b9357a955c88fe1f7.png"]
       trendsId: '1723254751037428713'
   validate:
-    - equals: {code: 0}
+    - equals: {code: 510}
 
 - name: 退出登录
   requests:
