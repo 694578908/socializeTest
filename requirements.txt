@@ -1,15 +1,14 @@
 requests~=2.31.0
-pytest~=7.4.2
+pytest~=7.4.3
 pytest-html
 pytest-xdist
 pytest-ordering
 pytest-rerunfailures
 allure-pytest
-pytest-redis
 jsonpath~=0.82.2
 PyYAML~=6.0.1
 pytest-logger
 pytest-ini
 
-urllib3~=2.0.6
+urllib3~=2.0.7
 redis~=5.0.1
