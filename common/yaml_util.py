@@ -37,44 +37,55 @@ class YamlUtil:
         data = self.read_testcase_yaml(yaml_name, key_name)
         req_info = data["req_info"]
 
-    def func_yaml(self, data, code):
-        if isinstance(data, dict):
-            result = {}
-            for key, value in data.items():
-                # 处理不同类型的键
-                if key.startswith('get_mobile_code_key:'):
-                    # 提取键号并将其附加到新键
-                    new_key = f'get_mobile_code_key:{code}'
-                    result[new_key] = self.func_yaml(value, code)
-                elif key == 'Authorization':
-                    # 处理 'token' 键
-                    result[key] = self.func_yaml(value, code)
-                else:
-                    result[key] = self.func_yaml(value, code)
-            return result
-        elif isinstance(data, list):
-            return [self.func_yaml(item, code) for item in data]
-        elif isinstance(data, str):
-            matches = re.findall(r'\${(\w+)}', data)
-            for match in matches:
-                data = data.replace(f'${{{match}}}', str(code))
-            return data
-        return data
-
-
-
-    # def func_yaml(data, variables):
+    # def func_yaml(self, data, code):
     #     if isinstance(data, dict):
     #         result = {}
     #         for key, value in data.items():
-    #             result[key] = replace_variables(value, variables)
+    #             # 处理不同类型的键
+    #             if key.startswith('get_mobile_code_key:'):
+    #                 # 提取键号并将其附加到新键
+    #                 new_key = f'get_mobile_code_key:{code}'
+    #                 result[new_key] = self.func_yaml(value, code)
+    #             elif key == 'Authorization':
+    #                 # 处理 'token' 键
+    #                 result[key] = self.func_yaml(value, code)
+    #             else:
+    #                 result[key] = self.func_yaml(value, code)
     #         return result
     #     elif isinstance(data, list):
-    #         return [replace_variables(item, variables) for item in data]
+    #         return [self.func_yaml(item, code) for item in data]
     #     elif isinstance(data, str):
-    #         for variable, replacement in variables.items():
-    #             data = data.replace(f"${{{variable}}}", str(replacement))
+    #         matches = re.findall(r'\${(\w+)}', data)
+    #         for match in matches:
+    #             data = data.replace(f'${{{match}}}', str(code))
     #         return data
     #     return data
 
+    def func_yaml(self, test_cases, placeholder_values):
+        for test_case in test_cases:
+            if 'requests' in test_case:
+                request = test_case['requests']
+
+                # 处理 url
+                if 'url' in request and isinstance(request['url'], str):
+                    for placeholder, new_value in placeholder_values.items():
+                        if f"${{{placeholder}}}" in request['url']:
+                            request['url'] = request['url'].replace(f"${{{placeholder}}}", str(new_value))
+
+                    # 处理 headers
+                    if 'headers' in request and isinstance(request['headers'], dict):
+                        for key, value in request['headers'].items():
+                            if isinstance(value, str):
+                                for placeholder, new_value in placeholder_values.items():
+                                    if f"${{{placeholder}}}" in value:
+                                        request['headers'][key] = value.replace(f"${{{placeholder}}}", str(new_value))
+
+                    # 处理 data
+                    if 'data' in request and isinstance(request['data'], dict):
+                        for key, value in request['data'].items():
+                            if isinstance(value, str):
+                                for placeholder, new_value in placeholder_values.items():
+                                    if f"${{{placeholder}}}" in request['data']:
+                                        request['data'][key] = value.replace(f"${{{placeholder}}}", str(new_value))
+        return test_cases
 

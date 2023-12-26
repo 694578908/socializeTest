@@ -18,5 +18,5 @@ def read_redis(redis_data):
         raise ValueError(error_message)
 
     # 将键值对构建为字典
-    data = {full_key: value}
+    data = {'code': value}
     YamlUtil().write_extract_yaml(data)

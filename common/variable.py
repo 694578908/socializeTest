@@ -30,31 +30,9 @@ from common.yaml_util import YamlUtil
 #     return read_and_replace_variable('Authorization', error_message)
 
 
-def read_and_replace_variables(keys_and_messages):
-    value = {}
-    for key, error_message in keys_and_messages.items():
-        value = YamlUtil().read_extract_yaml(key)
-        if value is None:
-            log_util.log_info(error_message)
-            raise ValueError(error_message)
-        # now_value[key] = value
-    data = YamlUtil().read_testcase_yaml('test_case.yml')
+def read_and_replace_variables(test_case_key):
+    value = YamlUtil().read_testcase_yaml('extract.yml')
+    data = YamlUtil().read_testcase_yaml('test_case.yml')[test_case_key]
     replaced_data = YamlUtil().func_yaml(data, value)
-    return [replaced_data]
+    return replaced_data
 
-
-def variable_code(redis_data):
-    keys_and_messages = {
-        f'get_mobile_code_key:1{redis_data[4]}': f"\033[1m\033[31m{'get_mobile_code_key:1{redis_data[4]}'}"
-        f"未获取到验证码，请检查config.ini,test_case.yml手机号是否正确(手机号切勿设置白名单)\033[0m",
-        # 添加其他 key 和对应的错误消息
-    }
-    return read_and_replace_variables(keys_and_messages)
-
-
-def variable_token():
-    keys_and_messages = {
-        'Authorization': "\033[1m\033[31mAuthorization为空\033[0m",
-        # 添加其他 key 和对应的错误消息
-    }
-    return read_and_replace_variables(keys_and_messages)

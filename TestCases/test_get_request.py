@@ -6,7 +6,7 @@ import allure
 from common import log_util
 from common.redis_extract import read_redis
 from common.request_util import RequestUtil
-from common.variable import variable_token, variable_code
+from common.variable import read_and_replace_variables
 from common.yaml_util import YamlUtil
 from common.count import count
 
@@ -59,8 +59,8 @@ class TestRequest:
     # 提交验证码
     @allure.feature('登录功能模块')
     @allure.title('提交验证码')
-    def test_case_gettoken(self, redis_data):
-        value = variable_code(redis_data)[0]['code_token']
+    def test_case_gettoken(self):
+        value = read_and_replace_variables('code_token')
         for case in value:
             count(case)  # 打印用例执行次数
             if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
@@ -102,7 +102,7 @@ class TestRequest:
     @allure.feature('接口功能模块')
     @allure.title("接口参数效验")
     def test_case_nft(self):
-        value = variable_token()[0]['nft']
+        value = read_and_replace_variables('nft')
         for case in value:
             count(case)  # 打印用例执行次数
             if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
