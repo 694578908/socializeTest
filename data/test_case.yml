@@ -232,7 +232,7 @@ nft:
       count: 1
       userAddressId: '1739113908698554369'
       userAddress: 哦你哦
-      serviceScheduledBeginTime: '2023-12-25 17:00:00'
+      serviceScheduledBeginTime: '2023-12-29 17:00:00'
       serviceScheduledBeginTimeStr: '今17:00'
       serviceScheduledEndTime: ''
       tripMode: bus
