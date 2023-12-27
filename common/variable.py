@@ -1,5 +1,6 @@
 from common import log_util
 from common.yaml_util import YamlUtil
+import re
 
 
 # def read_and_replace_variable(key, error_message):
@@ -36,3 +37,9 @@ def read_and_replace_variables(test_case_key):
     replaced_data = YamlUtil().func_yaml(data, value)
     return replaced_data
 
+
+def extract_response_data(extraction_dict, result):
+    for key, regex_pattern in extraction_dict.items():
+        extracted_value = re.search(regex_pattern, result)
+        if extracted_value:
+            YamlUtil().write_extract_yaml({key: extracted_value.group(1)})

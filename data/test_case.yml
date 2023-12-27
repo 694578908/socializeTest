@@ -19,6 +19,8 @@ code_token:
       Content-Type: application/json
       Client: member
     data:
+  extract:
+    Authorization: '"access_token":"([^"]+)"'
   validate:
     - equals: {code: 0}
 

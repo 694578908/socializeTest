@@ -1,4 +1,6 @@
 import json
+import re
+
 import jsonpath
 import pytest
 import allure
@@ -6,7 +8,7 @@ import allure
 from common import log_util
 from common.redis_extract import read_redis
 from common.request_util import RequestUtil
-from common.variable import read_and_replace_variables
+from common.variable import read_and_replace_variables, extract_response_data
 from common.yaml_util import YamlUtil
 from common.count import count
 
@@ -72,10 +74,12 @@ class TestRequest:
                     data = (case['requests']['data'])
                     result = RequestUtil().send_requests(method, url, headers, data)
                     res = (json.loads(result))
+                    if 'extract' in case.keys():
+                        extraction_dict = case['extract']
+                        # 使用extract的表达式提取接口响应参数并写入extract.yml
+                        extract_response_data(extraction_dict, result)
                     log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
                     log_util.log_info('实际结果接口返回信息为:{}'.format(result))
-                    message = json.loads(result)['data']['access_token']
-                    YamlUtil().write_extract_yaml({'Authorization': message})  # 写入Authorization到extract.yml
                     log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
                     with allure.step(case['name']):
@@ -114,6 +118,10 @@ class TestRequest:
                     data = (case['requests']['data'])
                     result = RequestUtil().send_requests(method, url, headers, data)
                     res = (json.loads(result))
+                    if 'extract' in case.keys():
+                        extraction_dict = case['extract']
+                        # 使用extract的表达式提取接口响应参数并写入extract.yml
+                        extract_response_data(extraction_dict, result)
                     log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
                     log_util.log_info('实际结果接口返回信息为:{}'.format(result))
                     log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
