@@ -33,8 +33,7 @@ import re
 
 def read_and_replace_variables(test_case_key):
     value = YamlUtil().read_testcase_yaml('extract.yml')
-    data = YamlUtil().read_testcase_yaml('test_case.yml')[test_case_key]
-    replaced_data = YamlUtil().func_yaml(data, value)
+    replaced_data = YamlUtil().func_yaml(test_case_key, value)
     return replaced_data
 
 

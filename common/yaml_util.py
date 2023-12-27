@@ -62,30 +62,29 @@ class YamlUtil:
     #     return data
 
     def func_yaml(self, test_cases, placeholder_values):
-        for test_case in test_cases:
-            if 'requests' in test_case:
-                request = test_case['requests']
+        for test_case_key, test_case in test_cases.items():
+            request = test_case
 
-                # 处理 url
-                if 'url' in request and isinstance(request['url'], str):
-                    for placeholder, new_value in placeholder_values.items():
-                        if f"${{{placeholder}}}" in request['url']:
-                            request['url'] = request['url'].replace(f"${{{placeholder}}}", str(new_value))
+            # 处理 url
+            if 'url' in request and isinstance(request['url'], str):
+                for placeholder, new_value in placeholder_values.items():
+                    if f"${{{placeholder}}}" in request['url']:
+                        request['url'] = request['url'].replace(f"${{{placeholder}}}", str(new_value))
 
-                    # 处理 headers
-                    if 'headers' in request and isinstance(request['headers'], dict):
-                        for key, value in request['headers'].items():
-                            if isinstance(value, str):
-                                for placeholder, new_value in placeholder_values.items():
-                                    if f"${{{placeholder}}}" in value:
-                                        request['headers'][key] = value.replace(f"${{{placeholder}}}", str(new_value))
+                # 处理 headers
+                if 'headers' in request and isinstance(request['headers'], dict):
+                    for key, value in request['headers'].items():
+                        if isinstance(value, str):
+                            for placeholder, new_value in placeholder_values.items():
+                                if f"${{{placeholder}}}" in value:
+                                    request['headers'][key] = value.replace(f"${{{placeholder}}}", str(new_value))
 
-                    # 处理 data
-                    if 'data' in request and isinstance(request['data'], dict):
-                        for key, value in request['data'].items():
-                            if isinstance(value, str):
-                                for placeholder, new_value in placeholder_values.items():
-                                    if f"${{{placeholder}}}" in request['data']:
-                                        request['data'][key] = value.replace(f"${{{placeholder}}}", str(new_value))
+                # 处理 data
+                if 'data' in request and isinstance(request['data'], dict):
+                    for key, value in request['data'].items():
+                        if isinstance(value, str):
+                            for placeholder, new_value in placeholder_values.items():
+                                if f"${{{placeholder}}}" in request['data']:
+                                    request['data'][key] = value.replace(f"${{{placeholder}}}", str(new_value))
+
         return test_cases
-

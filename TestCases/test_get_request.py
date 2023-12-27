@@ -61,87 +61,87 @@ class TestRequest:
     # 提交验证码
     @allure.feature('登录功能模块')
     @allure.title('提交验证码')
-    def test_case_gettoken(self):
-        value = read_and_replace_variables('code_token')
-        for case in value:
-            count(case)  # 打印用例执行次数
-            if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
-                if jsonpath.jsonpath(case, '$..url') and jsonpath.jsonpath(case, '$..method') \
-                        and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
-                    headers = case['requests']['headers']
-                    url = (case['requests']['url'])
-                    method = (case['requests']['method'])
-                    data = (case['requests']['data'])
-                    result = RequestUtil().send_requests(method, url, headers, data)
-                    res = (json.loads(result))
-                    if 'extract' in case.keys():
-                        extraction_dict = case['extract']
-                        # 使用extract的表达式提取接口响应参数并写入extract.yml
-                        extract_response_data(extraction_dict, result)
-                    log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
-                    log_util.log_info('实际结果接口返回信息为:{}'.format(result))
-                    log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
+    @pytest.mark.parametrize('case', YamlUtil().read_testcase_yaml('test_case.yml', 'code_token'))
+    def test_case_gettoken(self, case):
+        count(case)  # 打印用例执行次数
+        if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
+            if jsonpath.jsonpath(case, '$..url') and jsonpath.jsonpath(case, '$..method') \
+                    and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
+                replaced_case = read_and_replace_variables(case)
+                headers = case['requests']['headers']
+                url = (case['requests']['url'])
+                method = (case['requests']['method'])
+                data = (case['requests']['data'])
+                result = RequestUtil().send_requests(method, url, headers, data)
+                res = (json.loads(result))
+                if 'extract' in replaced_case:
+                    extraction_dict = replaced_case['extract']
+                    # 使用extract的表达式提取接口响应参数并写入extract.yml
+                    extract_response_data(extraction_dict, result)
+                log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
+                log_util.log_info('实际结果接口返回信息为:{}'.format(result))
+                log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
-                    with allure.step(case['name']):
-                        request_info = {"method": method, "url": url}
-                        allure.attach(json.dumps(request_info, ensure_ascii=False, indent=2), name="请求地址",
-                                      attachment_type=allure.attachment_type.JSON)
-                        allure.attach(json.dumps(headers, ensure_ascii=False, indent=2), name="请求头",
-                                      attachment_type=allure.attachment_type.JSON)
-                        allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
-                                      attachment_type=allure.attachment_type.JSON)
-                        allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
-                                      attachment_type=allure.attachment_type.JSON)
-                        try:
-                            assert res['code'] == case['validate'][0]['equals']['code']
-                            allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言成功")
-                        except AssertionError:
-                            allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
-                            raise
-                else:
-                    print("在yml文件requests目录下必须要有method,url,data,headers")
+                with allure.step(case['name']):
+                    request_info = {"method": method, "url": url}
+                    allure.attach(json.dumps(request_info, ensure_ascii=False, indent=2), name="请求地址",
+                                  attachment_type=allure.attachment_type.JSON)
+                    allure.attach(json.dumps(headers, ensure_ascii=False, indent=2), name="请求头",
+                                  attachment_type=allure.attachment_type.JSON)
+                    allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
+                                  attachment_type=allure.attachment_type.JSON)
+                    allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
+                                  attachment_type=allure.attachment_type.JSON)
+                    try:
+                        assert res['code'] == case['validate'][0]['equals']['code']
+                        allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言成功")
+                    except AssertionError:
+                        allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
+                        raise
             else:
-                print("yml一级关键字必须包含:name,requests,validate")
+                print("在yml文件requests目录下必须要有method,url,data,headers")
+        else:
+            print("yml一级关键字必须包含:name,requests,validate")
 
     @allure.feature('接口功能模块')
     @allure.title("接口参数效验")
-    def test_case_nft(self):
-        value = read_and_replace_variables('nft')
-        for case in value:
-            count(case)  # 打印用例执行次数
-            if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
-                if jsonpath.jsonpath(case, '$..url') and jsonpath.jsonpath(case, '$..method') \
-                        and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
-                    headers = case['requests']['headers']
-                    url = (case['requests']['url'])
-                    method = (case['requests']['method'])
-                    data = (case['requests']['data'])
-                    result = RequestUtil().send_requests(method, url, headers, data)
-                    res = (json.loads(result))
-                    if 'extract' in case.keys():
-                        extraction_dict = case['extract']
-                        # 使用extract的表达式提取接口响应参数并写入extract.yml
-                        extract_response_data(extraction_dict, result)
-                    log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
-                    log_util.log_info('实际结果接口返回信息为:{}'.format(result))
-                    log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
+    @pytest.mark.parametrize('case', YamlUtil().read_testcase_yaml('test_case.yml', 'nft'))
+    def test_case_nft(self, case):
+        count(case)  # 打印用例执行次数
+        if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
+            if jsonpath.jsonpath(case, '$..url') and jsonpath.jsonpath(case, '$..method') \
+                    and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
+                replaced_case = read_and_replace_variables(case)
+                headers = case['requests']['headers']
+                url = (case['requests']['url'])
+                method = (case['requests']['method'])
+                data = (case['requests']['data'])
+                result = RequestUtil().send_requests(method, url, headers, data)
+                res = (json.loads(result))
+                if 'extract' in replaced_case:
+                    extraction_dict = replaced_case['extract']
+                    # 使用extract的表达式提取接口响应参数并写入extract.yml
+                    extract_response_data(extraction_dict, result)
+                log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
+                log_util.log_info('实际结果接口返回信息为:{}'.format(result))
+                log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
-                    with allure.step(case['name']):
-                        request_info = {"method": method, "url": url}
-                        allure.attach(json.dumps(request_info, ensure_ascii=False, indent=2), name="请求地址",
-                                      attachment_type=allure.attachment_type.JSON)
-                        allure.attach(json.dumps(headers, ensure_ascii=False, indent=2), name="请求头",
-                                      attachment_type=allure.attachment_type.JSON)
-                        allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
-                                      attachment_type=allure.attachment_type.JSON)
-                        allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
-                                      attachment_type=allure.attachment_type.JSON)
-                        try:
-                            assert res['code'] == case['validate'][0]['equals']['code']
-                            allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言成功")
-                        except AssertionError:
-                            allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
-                            raise
+                with allure.step(case['name']):
+                    request_info = {"method": method, "url": url}
+                    allure.attach(json.dumps(request_info, ensure_ascii=False, indent=2), name="请求地址",
+                                  attachment_type=allure.attachment_type.JSON)
+                    allure.attach(json.dumps(headers, ensure_ascii=False, indent=2), name="请求头",
+                                  attachment_type=allure.attachment_type.JSON)
+                    allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
+                                  attachment_type=allure.attachment_type.JSON)
+                    allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
+                                  attachment_type=allure.attachment_type.JSON)
+                    try:
+                        assert res['code'] == case['validate'][0]['equals']['code']
+                        allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言成功")
+                    except AssertionError:
+                        allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
+                        raise
             else:
                 print("在yml文件requests目录下必须要有method,url,data,headers")
         else:
