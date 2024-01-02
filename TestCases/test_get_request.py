@@ -50,9 +50,9 @@ class TestRequest:
                     allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
                     raise
             else:
-                print("在yml文件requests目录下必须要有method,url,data")
+                print("\033[1m\033[31m"+"在yml文件requests目录下必须要有method,url,data,headers"+"\033[0m")
         else:
-            print("yml一级关键字必须包含:name,requests,validate")
+            print("\033[1m\033[31m"+"yml一级关键字必须包含:name,requests,validate"+"\033[0m")
 
     # 提交验证码
     @allure.feature('登录功能模块')
@@ -94,10 +94,10 @@ class TestRequest:
                     allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
                     raise
             else:
-                print("在yml文件requests目录下必须要有method,url,data,headers")
+                print("\033[1m\033[31m"+"在yml文件requests目录下必须要有method,url,data,headers"+"\033[0m")
 
         else:
-            print("yml一级关键字必须包含:name,requests,validate")
+            print("\033[1m\033[31m"+"yml一级关键字必须包含:name,requests,validate"+"\033[0m")
 
     @allure.feature('接口功能模块')
     @pytest.mark.parametrize('case', YamlUtil().read_testcase_yaml('test_case.yml', 'nft'))
@@ -138,6 +138,6 @@ class TestRequest:
                     allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
                     raise
             else:
-                print("在yml文件requests目录下必须要有method,url,data,headers")
+                print("\033[1m\033[31m"+"在yml文件requests目录下必须要有method,url,data,headers"+"\033[0m")
         else:
-            print("yml一级关键字必须包含:name,requests,validate")
+            print("\033[1m\033[31m"+"yml一级关键字必须包含:name,requests,validate"+"\033[0m")
