@@ -1,10 +1,7 @@
 import json
-import re
-
 import jsonpath
 import pytest
 import allure
-
 from common import log_util
 from common.redis_extract import read_redis
 from common.request_util import RequestUtil
