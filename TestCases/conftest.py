@@ -46,3 +46,5 @@ def clear_log():
     expiration_hours = int(read_ini()['log']['expiration_hours'])
     clear_logs(expiration_hours)
     yield
+
+

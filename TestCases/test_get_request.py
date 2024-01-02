@@ -29,7 +29,7 @@ class TestRequest:
                 result = RequestUtil().send_requests(method, url, headers, data)
                 res = (json.loads(result))
                 read_redis(redis_data)  # 调取redis并把验证码写入extract.yml文件里
-                log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
+                log_util.log_info('用例标题:{},请求地址为:{},请求参数为:{},请求头:{}'.format(case['name'], url, data, headers))
                 log_util.log_info('实际结果接口返回信息为:{}'.format(result))
                 log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
@@ -74,7 +74,7 @@ class TestRequest:
                     extraction_dict = replaced_case['extract']
                     # 使用extract的表达式提取接口响应参数并写入extract.yml
                     extract_response_data(extraction_dict, result)
-                log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
+                log_util.log_info('用例标题:{},请求地址为:{},请求参数为:{},请求头:{}'.format(case['name'], url, data, headers))
                 log_util.log_info('实际结果接口返回信息为:{}'.format(result))
                 log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
@@ -118,7 +118,7 @@ class TestRequest:
                     extraction_dict = replaced_case['extract']
                     # 使用extract的表达式提取接口响应参数并写入extract.yml
                     extract_response_data(extraction_dict, result)
-                log_util.log_info('用例标题:{},请求地址为:{}, 请求参数为:{}'.format(case['name'], url, data))
+                log_util.log_info('用例标题:{},请求地址为:{},请求参数为:{},请求头:{}'.format(case['name'], url, data, headers))
                 log_util.log_info('实际结果接口返回信息为:{}'.format(result))
                 log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
