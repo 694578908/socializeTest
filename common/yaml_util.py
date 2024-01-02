@@ -84,7 +84,7 @@ class YamlUtil:
                     for key, value in request['data'].items():
                         if isinstance(value, str):
                             for placeholder, new_value in placeholder_values.items():
-                                if f"${{{placeholder}}}" in request['data']:
+                                if f"${{{placeholder}}}" in value:
                                     request['data'][key] = value.replace(f"${{{placeholder}}}", str(new_value))
 
         return test_cases
