@@ -62,6 +62,8 @@ class YamlUtil:
     #     return data
 
     def func_yaml(self, test_cases, placeholder_values):
+        if placeholder_values is None:
+            return test_cases
         for test_case_key, test_case in test_cases.items():
             request = test_case
 
