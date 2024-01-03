@@ -17,3 +17,9 @@ def print_centered_ansi(text, color_code):
     centered_text = f"\033[{color_code}m{left_fill}{text}{right_fill}\033[0m"
     # 打印居中文本
     print(centered_text)
+
+
+# 红色字体并加粗
+def colorize_text(text, style='\033[1m\033[31m'):
+    end_style = '\033[0m'
+    return style + text + end_style

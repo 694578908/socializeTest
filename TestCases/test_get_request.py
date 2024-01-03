@@ -8,6 +8,7 @@ from common.request_util import RequestUtil
 from common.variable import read_and_replace_variables, extract_response_data
 from common.yaml_util import YamlUtil
 from common.count import count
+from config.color import colorize_text
 
 
 @allure.epic('社交用户端')
@@ -68,6 +69,10 @@ class TestRequest:
                     allure.attach(f"实际结果:{res['code']}，预期结果{case['validate'][0]['equals']['code']}", name="状态Code断言失败")
                     raise
             else:
-                print("\033[1m\033[31m" + "在yml文件requests目录下必须要有method,url,data,headers" + "\033[0m")
+                error_message = colorize_text("在yml文件requests目录下必须要有method,url,data,headers")
+                log_util.log_info(error_message)
+                raise ValueError(error_message)
         else:
-            print("\033[1m\033[31m" + "yml一级关键字必须包含:name,requests,validate" + "\033[0m")
+            error_message = colorize_text("yml一级关键字必须包含:name,requests,validate")
+            log_util.log_info(error_message)
+            raise ValueError(error_message)
