@@ -24,7 +24,7 @@ def email_data():
 def send_email(data):
     smtp_server, smtp_username, smtp_password, smtp_port, to_mail, from_email, subject, email_log = data
     if not email_log:
-        log_util.log_info(email_log)
+        log_util.log_info('email是否开启:{}'.format(email_log))
         return
     if any(value is None or value == '' for value in data):
         return
