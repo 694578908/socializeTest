@@ -5,6 +5,7 @@ import os
 
 from common import log_util
 from common.ReadFile import read_ini
+from common.color import colorize_text
 
 
 def email_data():
@@ -48,9 +49,13 @@ def send_email(data):
         html_content = file.read()
         html_attachment = MIMEText(html_content, 'html', 'utf-8')
         message.attach(html_attachment)
-
-    # 登录 smtp 服务器并发送邮件
-    smtp = smtplib.SMTP_SSL(smtpserver, smtpport)
-    smtp.login(smtpusername, smtppassword)
-    smtp.sendmail(fromemail, tomail, message.as_string())
-    smtp.quit()
+    try:
+        # 登录 smtp 服务器并发送邮件
+        smtp = smtplib.SMTP_SSL(smtpserver, smtpport)
+        smtp.login(smtpusername, smtppassword)
+        smtp.sendmail(fromemail, tomail, message.as_string())
+        smtp.quit()
+    except smtplib.SMTPException as e:
+        email__error_message = colorize_text(f"Email发送失败. Exception: {e}")
+        log_util.log_info(email__error_message)
+        raise ValueError(email__error_message)
