@@ -1,8 +1,10 @@
 import pytest
 import logging
 from common.ReadFile import read_ini
+from common.email_util import send_email
 from common.log_util import clear_logs, disable_log
 from common.yaml_util import YamlUtil
+
 
 # redis参数配置项
 @pytest.fixture(scope='session')
@@ -46,5 +48,3 @@ def clear_log():
     expiration_hours = int(read_ini()['log']['expiration_hours'])
     clear_logs(expiration_hours)
     yield
-
-
