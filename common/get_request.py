@@ -5,7 +5,7 @@ from common import log_util
 from common.request_util import RequestUtil
 from common.variable import read_and_replace_variables, extract_response_data
 from common.count import count
-from config.color import colorize_text
+from common.color import colorize_text
 
 
 def case_request_response(case):

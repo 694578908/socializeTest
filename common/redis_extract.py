@@ -1,7 +1,7 @@
 import redis
 from common.yaml_util import YamlUtil
 from common import log_util
-from config.color import colorize_text
+from common.color import colorize_text
 
 
 # 获取redis的value并写入yaml

@@ -3,8 +3,8 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/TestCases/conftest.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/TestCases/run.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/color.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/variable.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/config/color.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pytest.ini" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

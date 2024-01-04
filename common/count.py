@@ -1,4 +1,4 @@
-from config.color import print_centered_ansi
+from common.color import print_centered_ansi
 
 counter = 0
 
