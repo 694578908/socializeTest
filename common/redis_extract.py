@@ -9,7 +9,6 @@ def read_redis(redis_data):
     host, password, port, db, key = redis_data
     try:
         redis_client = redis.StrictRedis(host=host, port=port, password=password, db=db, decode_responses=True)
-        log_util.log_info('账号:{},密码:{},端口:{},数据库:{}'.format(host, password, port, db))
         response = redis_client.ping()
         log_util.log_info('Redis是否连接成功:{}'.format(response))
         if response:

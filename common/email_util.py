@@ -1,8 +1,7 @@
 import smtplib
+import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import os
-
 from common import log_util
 from common.ReadFile import read_ini
 from common.color import colorize_text
