@@ -58,3 +58,6 @@ def send_email(data):
         email__error_message = colorize_text(f"Email发送失败. Exception: {e}")
         log_util.log_info(email__error_message)
         raise ValueError(email__error_message)
+
+
+
