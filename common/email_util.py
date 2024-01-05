@@ -51,13 +51,23 @@ def send_email(data):
     try:
         # 登录 smtp 服务器并发送邮件
         smtp = smtplib.SMTP_SSL(smtpserver, smtpport)
-        smtp.login(smtpusername, smtppassword)
-        smtp.sendmail(fromemail, tomail, message.as_string())
+        log_util.log_info("SMTP 连接成功")
+        smtp_login = smtp.login(smtpusername, smtppassword)
+        if smtp_login[0] == 235:
+            log_util.log_info("SMTP 登录成功")
+        else:
+            log_util.log_info(f"SMTP 登录失败，错误代码: {smtp_login[0]}, 错误消息: {smtp_login[1]}")
+            return
+        smtp_sendmail = smtp.sendmail(fromemail, tomail, message.as_string())
+        if not smtp_sendmail:
+            log_util.log_info("email发送成功")
+        else:
+            log_util.log_info(f"邮件发送失败，失败信息: {smtp_sendmail}")
         smtp.quit()
+
     except smtplib.SMTPException as e:
         email__error_message = colorize_text(f"Email发送失败. Exception: {e}")
         log_util.log_info(email__error_message)
-        raise ValueError(email__error_message)
 
 
 
