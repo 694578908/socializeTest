@@ -52,9 +52,11 @@ def send_email(data):
         # 登录 smtp 服务器并发送邮件
         smtp = smtplib.SMTP_SSL(smtpserver, smtpport)
         log_util.log_info("SMTP 连接成功")
+        print("SMTP 连接成功")
         smtp_login = smtp.login(smtpusername, smtppassword)
         if smtp_login[0] == 235:
             log_util.log_info("SMTP 登录成功")
+            print("SMTP 登录成功")
         else:
             log_util.log_info(f"SMTP 登录失败，错误代码: {smtp_login[0]}, 错误消息: {smtp_login[1]}")
             return
