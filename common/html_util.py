@@ -46,7 +46,7 @@ class HTMLModifier:
             if tag:
                 tag.string = new_value
             else:
-                print(f"Tag '{edit_name}' not found in the HTML.")
+                print(f"{edit_name},{edit_text}该内容未在 HTML 中找到 ")
 
         # 将修改后的 HTML 内容写回文件
         with open(self.file_path, 'w', encoding='utf-8') as file:

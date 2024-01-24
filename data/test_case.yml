@@ -7,6 +7,8 @@ login:
       Client: member
     url: https://asgsaswec.qyfriend.com/api/socialize/login/getCode?type=1&mobile=15881086123
     data:
+  extract:
+    mobile: 'mobile'
   validate:
     - equals: {code: 0}
 

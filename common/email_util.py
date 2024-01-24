@@ -18,10 +18,12 @@ def email_data():
     send_enabled = read_ini()['email']['send_enabled'].lower()
     email_log = send_enabled != 'false'
     data = (smtp_server, smtp_username, smtp_password, smtp_port, to_mail, from_email, subject, email_log)
+    print(data)
     return data
 
 
 def send_email(data):
+    print(f'开始执行send_email')
     smtp_server, smtp_username, smtp_password, smtp_port, to_mail, from_email, subject, email_log = data
     if not email_log:
         log_util.log_info('email是否开启:{}'.format(email_log))
@@ -52,13 +54,16 @@ def send_email(data):
         # 登录 smtp 服务器并发送邮件
         smtp = smtplib.SMTP_SSL(smtpserver, smtpport)
         log_util.log_info("SMTP 连接成功")
+        print("SMTP 连接成功")
         smtp_login = smtp.login(smtpusername, smtppassword)
         if smtp_login[0] == 235:
             log_util.log_info("SMTP 登录成功")
+            print("SMTP 登录成功")
         else:
             log_util.log_info(f"SMTP 登录失败，错误代码: {smtp_login[0]}, 错误消息: {smtp_login[1]}")
             return
         smtp_sendmail = smtp.sendmail(fromemail, tomail, message.as_string())
+        print(f'执行结束send_email')
         if not smtp_sendmail:
             log_util.log_info("email发送成功")
         else:
@@ -68,6 +73,7 @@ def send_email(data):
     except smtplib.SMTPException as e:
         email__error_message = colorize_text(f"Email发送失败. Exception: {e}")
         log_util.log_info(email__error_message)
+        print('执行失败send_email')
 
 
 

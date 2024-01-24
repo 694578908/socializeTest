@@ -7,5 +7,3 @@ def read_ini(file_path='/socializeTest/config/config.ini'):
     config = configparser.ConfigParser()
     config.read(abs_path, encoding='utf-8-sig')
     return config
-
-
