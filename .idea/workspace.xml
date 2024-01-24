@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5e2ad6e-382f-42f9-9d90-747888ee4ee8" name="Default Changelist" comment="">
+    <list default="true" id="e5e2ad6e-382f-42f9-9d90-747888ee4ee8" name="Default Changelist" comment="修改代码">
+      <change afterPath="$PROJECT_DIR$/common/random_number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/ReadFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/ReadFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/email_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/email_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/get_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/get_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/html_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/html_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/log_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/request_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/request_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/variable.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/extract.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/extract.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/behaviors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_case.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/test_case.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/data/categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/categories.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/categories.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/packages.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/suites.csv" afterDir="false" />
@@ -16,23 +22,15 @@
       <change beforePath="$PROJECT_DIR$/reports/allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/data/timeline.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/export/influxDbData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/export/prometheusData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/history/categories-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/history/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/history/history-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/history/retry-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/categories.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/duration-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/retry-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/severity.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/status-chart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/suites.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/allure-report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/allure-report/widgets/summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,29 +41,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/random_number.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/config.ini">
+        <entry file="file://$PROJECT_DIR$/common/request_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="534">
+              <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
+        <entry file="file://$PROJECT_DIR$/common/get_request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="1015">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pytest.ini">
+        <entry file="file://$PROJECT_DIR$/common/log_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="1180">
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/email_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-416">
+            <state relative-caret-position="38">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -88,29 +103,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/test_case.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="222" column="10" selection-start-line="222" selection-start-column="8" selection-end-line="222" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCases/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/html_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1767">
+            <state relative-caret-position="1142">
               <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -120,10 +115,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reports/report.html">
+        <entry file="file://$PROJECT_DIR$/common/ReadFile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="449" column="4" selection-start-line="449" selection-start-column="4" selection-end-line="449" selection-end-column="4" />
+            <state relative-caret-position="190">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/redis_extract.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="266">
               <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
@@ -208,7 +218,6 @@
         <option value="$PROJECT_DIR$/data/case_data.yml" />
         <option value="$PROJECT_DIR$/data/case.yml" />
         <option value="$APPLICATION_HOME_DIR$/lib/http/client.py" />
-        <option value="$PROJECT_DIR$/common/request_util.py" />
         <option value="$PROJECT_DIR$/common/variable.py" />
         <option value="$PROJECT_DIR$/data/test_case.yml" />
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/allure_pytest/listener.py" />
@@ -231,6 +240,7 @@
         <option value="$PROJECT_DIR$/TestCases/test_get_request.py" />
         <option value="$PROJECT_DIR$/TestCases/run.py" />
         <option value="$PROJECT_DIR$/config/config.ini" />
+        <option value="$PROJECT_DIR$/common/request_util.py" />
       </list>
     </option>
   </component>
@@ -250,7 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,24 +297,11 @@
               <item name="socializeTest" type="462c0819:PsiDirectoryNode" />
               <item name="TestCases" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="PyCharm Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="Longdao_Backstage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -575,6 +571,7 @@
       <workItem from="1704335020053" duration="17309000" />
       <workItem from="1704362685146" duration="3599000" />
       <workItem from="1704422975795" duration="17337000" />
+      <workItem from="1706106495607" duration="414000" />
     </task>
     <task id="LOCAL-00026" summary="修改test_get_request的attach显示问题">
       <created>1696658605261</created>
@@ -931,7 +928,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276179000" />
+    <option name="totallyTimeSpent" value="276593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -943,24 +940,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1408" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21081941" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71428573" visible="true" weight="0.25921908" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71428573" weight="0.25921908" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.3275488" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286334" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32834646" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2857143" side_tool="true" weight="0.43383947" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8006396" weight="0.30911064" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.8006396" visible="true" weight="0.30866143" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286334" />
       <window_info active="true" anchor="bottom" id="Eval Reset" order="13" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Statistic" order="14" weight="0.329718" />
@@ -1054,7 +1051,6 @@
     <MESSAGE value="修改代码1" />
     <MESSAGE value="修改路径" />
     <MESSAGE value="添加全局提取参数的方法" />
-    <MESSAGE value="修改代码" />
     <MESSAGE value="修改报告标题" />
     <MESSAGE value="增加响应日志" />
     <MESSAGE value="优化test_get_request代码框架" />
@@ -1063,7 +1059,8 @@
     <MESSAGE value="优化框架" />
     <MESSAGE value="添加email邮箱通知" />
     <MESSAGE value="添加修改html模块框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加修改html模块框架" />
+    <MESSAGE value="修改代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改代码" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1080,7 +1077,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_in_test_user_py.coverage" NAME="pytest in test_user.py Coverage Results" MODIFIED="1696914395613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$pytest_for_test_user_TestUser_test_user_login.coverage" NAME="pytest for test_user.TestUser.test_user_login Coverage Results" MODIFIED="1696911993647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
-    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1704448499212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/Longdao_Backstage$run.coverage" NAME="run Coverage Results" MODIFIED="1706106689814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$RestClient.coverage" NAME="RestClient Coverage Results" MODIFIED="1696830895563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Longdao_Backstage$test_user.coverage" NAME="test_user Coverage Results" MODIFIED="1696902678216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
     <SUITE FILE_PATH="coverage/Merchant$run.coverage" NAME="run Coverage Results" MODIFIED="1695723630584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
@@ -1091,13 +1088,6 @@
     <SUITE FILE_PATH="coverage/Longdao_Backstage$ReadFile.coverage" NAME="ReadFile Coverage Results" MODIFIED="1696734898861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCases" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="134" column="8" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reports/allure-report/environment.properties" />
     <entry file="file://$PROJECT_DIR$/reports/allure-temp/environment.properties" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/allure_pytest/listener.py">
@@ -1151,19 +1141,9 @@
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/colorama/tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/2024-01-03.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="634" column="12" selection-start-line="634" selection-start-column="12" selection-end-line="634" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/2024-01-03.log" />
     <entry file="file://$PROJECT_DIR$/log/2024-01-02.log" />
-    <entry file="file://$PROJECT_DIR$/log/2024-01-04.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2511" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/2024-01-04.log" />
     <entry file="file://$PROJECT_DIR$/reports/allure-report/export/mail.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1182,9 +1162,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy" />
     <entry file="file://$PROJECT_DIR$/reports/allure-report/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -1244,56 +1222,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/get_request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/log_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1612">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/ReadFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/redis_extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/request_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/variable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
@@ -1331,37 +1259,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test_case.yml">
+    <entry file="file://$PROJECT_DIR$/reports/report.html" />
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="222" column="10" selection-start-line="222" selection-start-column="8" selection-end-line="222" selection-end-column="10" />
+        <state relative-caret-position="941">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/email_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-416">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/extract.yml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCases/test_get_request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="874">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/pytest.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="342">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test_case.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8436">
+          <caret line="222" column="10" selection-start-line="222" selection-start-column="8" selection-end-line="222" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1374,9 +1297,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/html_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1767">
+        <state relative-caret-position="1142">
           <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -1384,24 +1314,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reports/report.html">
+    <entry file="file://$PROJECT_DIR$/common/get_request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="449" column="4" selection-start-line="449" selection-start-column="4" selection-end-line="449" selection-end-column="4" />
+        <state relative-caret-position="1015">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pytest.ini">
+    <entry file="file://$PROJECT_DIR$/common/email_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="38">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.ini">
+    <entry file="file://$PROJECT_DIR$/data/extract.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/random_number.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/redis_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/log_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1180">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/ReadFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/request_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
         </state>
       </provider>
     </entry>
