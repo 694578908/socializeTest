@@ -7,6 +7,19 @@ login:
       Client: member
     url: https://asgsaswec.qyfriend.com/api/socialize/login/getCode?type=1&mobile=15881086123
     data:
+  extract:
+    mobile: 'mobile'
+  validate:
+    - equals: {code: 0}
+
+- name: 输入错误手机号
+  requests:
+    method: get
+    headers:
+      Content-Type: application/json
+      Client: member
+    url: https://asgsaswec.qyfriend.com/api/socialize/login/getCode?type=1&mobile=${mobile}
+    data:
   validate:
     - equals: {code: 0}
 

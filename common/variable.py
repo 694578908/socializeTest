@@ -1,5 +1,6 @@
 from common import log_util
 from common.yaml_util import YamlUtil
+from common.random_number import random_phone_number
 import re
 
 
@@ -39,6 +40,12 @@ def read_and_replace_variables(test_case_key):
 
 def extract_response_data(extraction_dict, result):
     for key, regex_pattern in extraction_dict.items():
-        extracted_value = re.search(regex_pattern, result)
-        if extracted_value:
-            YamlUtil().write_extract_yaml({key: extracted_value.group(1)})
+        if regex_pattern:
+            if regex_pattern == 'mobile':
+                random_phone_number(regex_pattern)
+            else:
+                extracted_value = re.search(regex_pattern, result)
+                if extracted_value:
+                    YamlUtil().write_extract_yaml({key: extracted_value.group(1)})
+        else:
+            YamlUtil().write_extract_yaml({key: regex_pattern})

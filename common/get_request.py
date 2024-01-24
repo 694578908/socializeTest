@@ -15,28 +15,20 @@ def case_request_response(case):
                 and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
             allure.dynamic.title(case['name'])
             replaced_case = read_and_replace_variables(case)
+            title = case['name']
             headers = case['requests']['headers']
             url = case['requests']['url']
             data = case['requests']['data']
             method = case['requests']['method']
-            result = RequestUtil().send_requests(method, url, headers, data)
-            res = (json.loads(result))
+            result = RequestUtil().send_requests(title, method, url, headers, data)
+            res = json.loads(result)
             if 'extract' in replaced_case:
                 extraction_dict = replaced_case['extract']
                 # 使用extract的表达式提取接口响应参数并写入extract.yml
                 extract_response_data(extraction_dict, result)
-            log_util.log_info('用例标题:{},请求地址:{},请求头:{},请求参数:{}'.format(case['name'], url, headers, data))
-            log_util.log_info('实际结果接口返回信息为:{}'.format(result))
-            log_util.log_info('预期结果：code 应为: {}'.format(case['validate'][0]['equals']['code']))
 
-            request_info = {"method": method, "url": url}
-            allure.attach(json.dumps(request_info, ensure_ascii=False, indent=2), name="请求地址",
-                          attachment_type=allure.attachment_type.JSON)
-            allure.attach(json.dumps(headers, ensure_ascii=False, indent=2), name="请求头",
-                          attachment_type=allure.attachment_type.JSON)
+            log_util.log_info('接口返回预期结果code应为: {}，实际为:{}'.format(case['validate'][0]['equals']['code'], res['code']))
             allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
-                          attachment_type=allure.attachment_type.JSON)
-            allure.attach(json.dumps(result, ensure_ascii=False, indent=2), name="接口响应",
                           attachment_type=allure.attachment_type.JSON)
             try:
                 assert res['code'] == case['validate'][0]['equals']['code']
