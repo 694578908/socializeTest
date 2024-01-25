@@ -1,0 +1,4 @@
+{
+  "method": "GET",
+  "url": "https://asgsaswec.qyfriend.com/api/socialize/sysMemberAttention/getMyAttention?pageNum=1&pageSize=20"
+}

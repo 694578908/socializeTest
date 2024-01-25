@@ -1,0 +1,4 @@
+{
+  "method": "GET",
+  "url": "https://asgsaswec.qyfriend.com/api/socialize/sysMemberAddr/member/list?pageSize=10&pageNum=1"
+}

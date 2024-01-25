@@ -1,0 +1,6 @@
+INFO     log:log_util.py:49 接口请求成功>>>>接口状态码:200,预期请求时间:5秒,实际请求时间:0.07秒
+INFO     log:log_util.py:49 用例标题:下单支付
+INFO     log:log_util.py:49 请求地址:https://asgsaswec.qyfriend.com/api/socialize/member/order/orderBuy,请求头:{'Date': 'Wed, 24 Jan 2024 10:03:11 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Encoding': 'gzip', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains'}
+INFO     log:log_util.py:49 请求参数:{"talentId": "1721707864438915073", "talentServiceId": "1733008444120477698", "count": 1, "userAddressId": "1739113908698554369", "userAddress": "\u54e6\u4f60\u54e6", "serviceScheduledBeginTime": "2023-12-29 17:00:00", "serviceScheduledBeginTimeStr": "\u4eca17:00", "serviceScheduledEndTime": "", "tripMode": "bus", "taxiFare": 0, "memberCouponIds": [], "payType": "alipay", "mixedPaymentFlag": 0, "faceValue": "0", "remark": "", "payTotalAmount": 1, "distance": "8.61"}
+INFO     log:log_util.py:49 接口返回信息为:{'code': 510, 'message': '预约时间必须大于当前时间', 'request': None, 'data': None}
+INFO     log:log_util.py:49 接口返回预期结果code应为: 0，实际为:510

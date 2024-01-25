@@ -1,0 +1,6 @@
+INFO     log:log_util.py:49 接口请求成功>>>>接口状态码:200,预期请求时间:5秒,实际请求时间:0.07秒
+INFO     log:log_util.py:49 用例标题:添加新地址
+INFO     log:log_util.py:49 请求地址:https://asgsaswec.qyfriend.com/api/socialize/sysMemberAddr/member/creat,请求头:{'Date': 'Wed, 24 Jan 2024 10:03:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Encoding': 'gzip', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains'}
+INFO     log:log_util.py:49 请求参数:{"contactName": "\u5c0f\u95ee", "contactPhone": "15881086123", "addrDetailInfo": "103", "isDefault": 1, "addressSelect": {"name": "\u5fa1\u4ed9\u4f11\u95f2\u4f1a\u6240", "id": "B0G05UJ8TP", "location": "104.066288,30.572924", "type": "\u751f\u6d3b\u670d\u52a1;\u6d17\u6d74\u63a8\u62ff\u573a\u6240;\u6d17\u6d74\u63a8\u62ff\u573a\u6240", "typecode": "071400", "pname": "\u56db\u5ddd\u7701", "cityname": "\u6210\u90fd\u5e02", "adname": "\u6b66\u4faf\u533a", "address": "\u9526\u60a6\u897f\u8def(\u5b75\u5316\u56ed\u5730\u94c1\u7ad9E1\u53e3\u6b65\u884c390\u7c73)", "pcode": null, "citycode": null, "adcode": null, "distance": "4m", "parent": "[]"}}
+INFO     log:log_util.py:49 接口返回信息为:{'code': 0, 'message': None, 'request': None, 'data': None}
+INFO     log:log_util.py:49 接口返回预期结果code应为: 0，实际为:0

@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "message": null,
+  "request": null,
+  "data": [
+    {
+      "id": "1739465719620239361",
+      "talentId": "1720355262029021186",
+      "headUrl": "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/talent/2a3ac17b5fa94340a3f75e03dfcefc82.png",
+      "nickname": "郑秋杰",
+      "sex": 1,
+      "age": 0,
+      "realSimilarity": 20
+    }
+  ]
+}

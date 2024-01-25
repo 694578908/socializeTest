@@ -1,0 +1,18 @@
+{
+  "sex": 1,
+  "birth": "2003-06-15",
+  "height": "160",
+  "weight": "45",
+  "changeService": [
+    {
+      "id": "1721737820736028673"
+    }
+  ],
+  "changeImg": [
+    "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/4f10ae7851b94b638ed405fcf5d239d3.jpg",
+    "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/23cda160c28f436b8dabfb629c26dee9.jpg",
+    "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/d6ac741e41684963bb034cb9c324285b.jpg",
+    "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/0e9ed64adfc44f56bfd091ed1fc6bc37.jpg"
+  ],
+  "remark": "11"
+}

@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "message": null,
+  "request": null,
+  "data": {
+    "createTime": "2023-11-07 09:55:17",
+    "id": "1721707864438915073",
+    "headUrl": "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/talent/206992d354d043bc8de2903b6bc4979a.png",
+    "nickname": "小阿卷",
+    "age": 27,
+    "sex": 2,
+    "height": 160.0,
+    "weight": 44.0,
+    "realSimilarity": 100,
+    "balanceAmount": "0.00",
+    "status": 1,
+    "recommendImg": null,
+    "remark": "一起出来玩吧",
+    "audio": "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/talent/8db5cdc1de6f4e728d6e6e13ea0ca69d.mp3",
+    "pwdMobile": null,
+    "onlineStatus": 1,
+    "labelList": [],
+    "photoList": [
+      "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/talent/f6a0e3510df64278b6e1e939b5c76eff.png",
+      "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/talent/9f5559338b594fd6bb648d994734b04f.png",
+      "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/talent/8393f6bc5ceb47dd9ad6e7ed0a742405.webp",
+      "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/talent/1c18bd0d9ef545af98ee9a24fd16e934.webp"
+    ],
+    "orderCommentScore": "5.00",
+    "orderComment": null,
+    "evaluateList": null,
+    "orderCount": 0,
+    "fansCount": 5,
+    "likeCount": 13,
+    "attention": false,
+    "inBlackList": false,
+    "distance": null
+  }
+}

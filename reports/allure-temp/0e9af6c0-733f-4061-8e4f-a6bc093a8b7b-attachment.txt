@@ -1,0 +1,6 @@
+INFO     log:log_util.py:49 接口请求成功>>>>接口状态码:200,预期请求时间:5秒,实际请求时间:0.04秒
+INFO     log:log_util.py:49 用例标题:入驻达人
+INFO     log:log_util.py:49 请求地址:https://asgsaswec.qyfriend.com/api/socialize/talentSettledPlatformLog/creat,请求头:{'Date': 'Wed, 24 Jan 2024 10:03:11 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Encoding': 'gzip', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains'}
+INFO     log:log_util.py:49 请求参数:{"sex": 1, "birth": "2003-06-15", "height": "160", "weight": "45", "changeService": [{"id": "1721737820736028673"}], "changeImg": ["https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/4f10ae7851b94b638ed405fcf5d239d3.jpg", "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/23cda160c28f436b8dabfb629c26dee9.jpg", "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/d6ac741e41684963bb034cb9c324285b.jpg", "https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/0e9ed64adfc44f56bfd091ed1fc6bc37.jpg"], "remark": "11"}
+INFO     log:log_util.py:49 接口返回信息为:{'code': 510, 'message': '您已经是达人了,请登录达人端完成达人信息的注册', 'request': None, 'data': None}
+INFO     log:log_util.py:49 接口返回预期结果code应为: 510，实际为:510

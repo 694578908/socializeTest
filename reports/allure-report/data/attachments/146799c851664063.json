@@ -1,0 +1,49 @@
+{
+  "code": 0,
+  "message": null,
+  "request": null,
+  "data": {
+    "integral": "0.00",
+    "memberLevelConfig": {
+      "level": 1,
+      "levelName": "LV.1",
+      "integral": "100.00",
+      "privilegeDetail": [
+        {
+          "id": 11,
+          "welfareDetails": {
+            "title": "111",
+            "employScopeStr": null,
+            "employScope": 1,
+            "timeType": 2,
+            "threshold": "100.00",
+            "faceValue": "99.00",
+            "startTime": "2023-10-10 08:00:00",
+            "endTime": "2023-11-22 08:00:00",
+            "longTime": null,
+            "activityCount": null
+          },
+          "receiveStatus": false
+        },
+        {
+          "id": 22,
+          "welfareDetails": {
+            "title": "优惠券门槛测试",
+            "employScopeStr": null,
+            "employScope": 1,
+            "timeType": 1,
+            "threshold": "300.00",
+            "faceValue": "10.00",
+            "startTime": null,
+            "endTime": null,
+            "longTime": 30,
+            "activityCount": null
+          },
+          "receiveStatus": false
+        }
+      ]
+    },
+    "nextLevelIntegral": "200.00",
+    "nextLevelName": "LV.2"
+  }
+}
