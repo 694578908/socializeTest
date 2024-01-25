@@ -2,6 +2,7 @@ import logging
 import os
 from datetime import datetime, timedelta
 import time
+from colorama import Fore
 
 # 创建一个全局的日志记录器和处理器
 logger = None
@@ -46,7 +47,8 @@ def init_logging(log_data):
 
 def log_info(message):
     if logger is not None:
-        logger.info(message)  # 记录日志信息
+        colored_message = f"{Fore.GREEN}{message}{Fore.RESET}"
+        logger.info(colored_message)  # 记录日志信息
 
 
 # 定义日志开启关闭

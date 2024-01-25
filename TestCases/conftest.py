@@ -1,7 +1,6 @@
 import pytest
 import logging
 from common.ReadFile import read_ini
-from common.email_util import send_email
 from common.log_util import clear_logs, disable_log
 from common.yaml_util import YamlUtil
 
