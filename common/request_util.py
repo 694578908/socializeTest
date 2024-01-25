@@ -41,9 +41,9 @@ class RequestUtil:
                       attachment_type=allure.attachment_type.JSON)
         try:
             assert rep.status_code == 200
-            log_status = '接口请求成功'
+            log_status = '接口响应成功'
         except AssertionError:
-            log_status = '接口请求失败'
+            log_status = '接口响应失败'
 
         log_util.log_info(
             '{}>>>>接口状态码:{},接口限制最大请求时间:{}秒,实际请求时间:{}秒'.format(log_status, rep.status_code, timeout_value,
@@ -53,6 +53,6 @@ class RequestUtil:
         log_util.log_info('请求参数:{}'.format(rep.request.body))
         log_util.log_info('接口返回信息为:{}'.format(rep.json()))
 
-        if not log_status == '接口请求成功':
+        if not log_status == '接口响应成功':
             raise AssertionError(log_status)
         return rep.text

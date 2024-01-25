@@ -1,6 +1,0 @@
-INFO     log:log_util.py:49 接口请求成功>>>>接口状态码:200,预期请求时间:5秒,实际请求时间:0.01秒
-INFO     log:log_util.py:49 用例标题:获取广场banner
-INFO     log:log_util.py:49 请求地址:https://asgsaswec.qyfriend.com/api/socialize/sysBanner/listBanner?type=2,请求头:{'Date': 'Wed, 24 Jan 2024 10:03:10 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Encoding': 'gzip', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains'}
-INFO     log:log_util.py:49 请求参数:None
-INFO     log:log_util.py:49 接口返回信息为:{'code': 0, 'message': None, 'request': None, 'data': []}
-INFO     log:log_util.py:49 接口返回预期结果code应为: 0，实际为:0

@@ -1,6 +1,0 @@
-INFO     log:log_util.py:49 接口请求成功>>>>接口状态码:200,预期请求时间:5秒,实际请求时间:0.03秒
-INFO     log:log_util.py:49 用例标题:拉黑达人
-INFO     log:log_util.py:49 请求地址:https://asgsaswec.qyfriend.com/api/socialize/memberBlackList/addClient?talentId=1735204105247363073,请求头:{'Date': 'Wed, 24 Jan 2024 10:03:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Encoding': 'gzip', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains'}
-INFO     log:log_util.py:49 请求参数:None
-INFO     log:log_util.py:49 接口返回信息为:{'code': 510, 'message': '无法获取达人信息', 'request': None, 'data': None}
-INFO     log:log_util.py:49 接口返回预期结果code应为: 510，实际为:510

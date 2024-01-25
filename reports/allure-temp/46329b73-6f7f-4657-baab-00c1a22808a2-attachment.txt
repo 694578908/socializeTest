@@ -1,6 +1,0 @@
-INFO     log:log_util.py:49 接口请求成功>>>>接口状态码:200,预期请求时间:5秒,实际请求时间:0.05秒
-INFO     log:log_util.py:49 用例标题:举报达人
-INFO     log:log_util.py:49 请求地址:https://asgsaswec.qyfriend.com/api/socialize/sysTalentTrendsReport/reportTrendsFromClient,请求头:{'Date': 'Wed, 24 Jan 2024 10:03:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Encoding': 'gzip', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains'}
-INFO     log:log_util.py:49 请求参数:{"reportType": "\u6d89\u53ca\u672a\u6210\u5e74\u4eba", "reportTypeId": "1717079285424234498", "reportReason": "111111111111111111111111", "reportUrls": "[\"https://socializemicro.oss-cn-chengdu.aliyuncs.com/uat/shejiao/member/3772ed5af2de418b9357a955c88fe1f7.png\"]", "trendsId": "1723254751037428713"}
-INFO     log:log_util.py:49 接口返回信息为:{'code': 510, 'message': '你已經舉報過该动态', 'request': None, 'data': None}
-INFO     log:log_util.py:49 接口返回预期结果code应为: 510，实际为:510

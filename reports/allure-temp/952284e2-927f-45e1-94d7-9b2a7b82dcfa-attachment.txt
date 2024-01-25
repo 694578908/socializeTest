@@ -1,6 +1,0 @@
-INFO     log:log_util.py:49 接口请求成功>>>>接口状态码:200,预期请求时间:5秒,实际请求时间:0.05秒
-INFO     log:log_util.py:49 用例标题:获取我的关注列表
-INFO     log:log_util.py:49 请求地址:https://asgsaswec.qyfriend.com/api/socialize/sysMemberAttention/getMyAttention?pageNum=1&pageSize=20,请求头:{'Date': 'Wed, 24 Jan 2024 10:03:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Encoding': 'gzip', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains'}
-INFO     log:log_util.py:49 请求参数:None
-INFO     log:log_util.py:49 接口返回信息为:{'code': 0, 'message': None, 'request': None, 'data': {'total': '0', 'list': [], 'pageNum': '1', 'pageSize': '20', 'power': None}}
-INFO     log:log_util.py:49 接口返回预期结果code应为: 0，实际为:0

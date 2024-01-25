@@ -9,3 +9,4 @@ def random_phone_number(key):
     phone_data = ''.join(random.sample(phone_data_list, k=8))
     phone_number = phone_header + phone_data
     YamlUtil().write_extract_yaml({key: phone_number})
+

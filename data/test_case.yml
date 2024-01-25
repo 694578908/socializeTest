@@ -12,8 +12,19 @@ login:
   validate:
     - equals: {code: 0}
 
+- name: 随机手机号
+  requests:
+    method: get
+    headers:
+      Content-Type: application/json
+      Client: member
+    url: https://asgsaswec.qyfriend.com/api/socialize/login/getCode?type=1&mobile=${mobile}
+    data:
+  validate:
+    - equals: {code: 0}
+
 code_token:
-- name: 提交验证码
+- name: 登录手机号和验证码
   requests:
     method: get
     url: https://asgsaswec.qyfriend.com/api/socialize/login/loginMember?code=${code}&mobile=15881086123
