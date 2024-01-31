@@ -33,7 +33,6 @@ code_token:
       Client: member
     data:
   extract:
-    Authorization: '"access_token":"([^"]+)"'
   validate:
     - equals: {code: 0}
 
